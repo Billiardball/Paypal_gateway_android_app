@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/value_5"
+    android:layout_marginRight="@dimen/value_5"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_country_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="India"
+        android:textSize="@dimen/font_8"></TextView>
+
+    <TextView
+        android:id="@+id/tv_country_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="IN"
+        android:textSize="@dimen/font_6"></TextView>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/value_4"
+        android:background="@color/black" />
+
+</LinearLayout>

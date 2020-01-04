@@ -1,0 +1,495 @@
+<resources>
+    <string name="app_name">Arram</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="facebook_app_id" translatable="false">526457394426996</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb526457394426996</string>
+
+
+    <string name="footer">\© Arram 2019|All rights reserved</string>
+
+    <string name="search">Search for products</string>
+
+    <string name="most_popular_poroducts">Most popular products</string>
+
+    <string name="related_product">Related Product</string>
+
+    <string name="special_offer">Today Special Deal</string>
+
+    <string name="whatsapp_not_installed">Whatsapp Not Installed</string>
+
+    <string name="view_all">View all</string>
+
+    <string name="view">View</string>
+
+    <string name="recently_view_product">Recently viewed products</string>
+
+    <string name="top_rated_product" translatable="false">Top Rated products</string>
+
+    <string name="my_orders">My Orders</string>
+
+    <string name="my_address">My Addresses</string>
+
+    <string name="currency">Choose Currency</string>
+
+    <string name="language">Choose Language</string>
+
+    <string name="address">Address</string>
+
+    <string name="my_reward">My Coupons</string>
+
+    <string name="rate_app">Rate the App</string>
+
+    <string name="account_setting">Account Setting</string>
+
+    <string name="clear_history">Clear History</string>
+
+    <string name="clear_filter">Clear Filter</string>
+
+    <string name="about_us">About Us</string>
+
+    <string name="contact_us">Contact Us</string>
+
+    <string name="request_password_reset">REQUEST PASSWORD RESET</string>
+
+    <string name="set_new_password">SET NEW PASSWORD</string>
+
+    <string name="forget_pass_desc">It\'s often forgotten that password things. Enter your email address below and click on the \'Request Password Reset\' botton. We will contact you sortly!</string>
+
+    <string name="forget_pass_pin_desc">Enter PIN that we have sent you in your registered Email address.</string>
+
+    <string name="enter_pin">Enter PIN</string>
+
+    <string name="now_you_can_enter_new_password">Now you can enter new Password</string>
+
+    <string name="saved_Address">2 saved ADDRESSES</string>
+
+    <string name="billing_address">Billing Address</string>
+
+    <string name="please_add_address">Please Add Address</string>
+
+    <string name="add_billing_address"> ADD BILLING ADDRESS</string>
+
+    <string name="add_shipping_address"> ADD SHIPPING ADDRESS</string>
+
+    <string name="add">ADD</string>
+
+    <string name="shipping_address">Shipping Address</string>
+
+    <string name="first_name">First Name</string>
+
+    <string name="last_name">Last Name</string>
+
+    <string name="pincode">Pincode</string>
+
+    <string name="address1">Address1</string>
+
+    <string name="address2">Address2</string>
+
+    <string name="remove">REMOVE</string>
+
+    <string name="edit">EDIT</string>
+
+    <string name="city">City</string>
+
+    <string name="company">Company</string>
+
+    <string name="phone_number">Phone Number</string>
+
+    <string name="save">Save</string>
+
+    <string name="cancel">Cancel</string>
+
+    <string name="sure">Sure</string>
+
+    <string name="date_of_birth">Date of Birth</string>
+
+    <string name="gender">Gender</string>
+
+    <string name="mobile_number">Mobile Number</string>
+
+    <string name="email_id">Email ID</string>
+
+    <string name="change_password">Change Password</string>
+
+    <string name="deactive_account">Deactive Account</string>
+
+    <string name="account_deactivated">Account Deactivated</string>
+
+    <string name="thank_you">THANK YOU</string>
+
+    <string name="your_order_is_placed_successfully">Your Order is Placed Successfully</string>
+
+    <string name="you_will_notify_in_few_momments">You will notify in few Moments</string>
+
+    <string name="internet_not_working">Please check your internet connection and try again later</string>
+
+    <string name="coupon_code">Coupon \nCode</string>
+
+    <string name="old_password">Old Password</string>
+
+    <string name="new_password">New Password</string>
+
+    <string name="enter_new_password">Enter New Password</string>
+
+    <string name="confirm_new_password">Confirm New Password</string>
+
+    <string name="retype_password">Retype Password</string>
+
+    <string name="confirm_deactivation">CONFIRM DEACTIVATION</string>
+
+
+    <string name="add_new_addresses">Add New Address</string>
+
+    <string name="reset_your_world">Reset your World</string>
+
+    <string name="terms_condition">Terms &amp; Condition </string>
+
+    <string name="privacy_policy">Privacy Policy</string>
+
+    <string name="follow_us">Follow Us</string>
+
+    <string name="more_about_us">More about us</string>
+
+    <string name="name">Name</string>
+
+    <string name="contact_number">Contact Number</string>
+
+    <string name="subject">Subject</string>
+
+    <string name="message">Message</string>
+
+    <string name="send">SEND</string>
+
+    <string name="rate_and_review_products">Rate and Review the product based on your Experience</string>
+
+    <string name="order">Order</string>
+
+    <string name="product">Product</string>
+
+    <string name="total">Total</string>
+
+    <string name="order_detail">Order Detail</string>
+
+    <string name="sub_total">Subtotal</string>
+
+    <string name="shipping">Shipping</string>
+
+    <string name="payment_method">Payment_method</string>
+
+    <string name="customer_detail">Customer Detail</string>
+
+    <string name="phone">Phone</string>
+
+    <string name="cancel_order">CANCEL ORDER</string>
+
+    <string name="claer">Clear</string>
+
+    <string name="this_permentantly_clear_you_history">This permanently deletes your browse,search history from this device.</string>
+
+
+    <string name="address_updated_successfully">Address updated successfully</string>
+
+    <string name="information_updated_successfully">Information updated successfully</string>
+
+    <string name="my_wish_list">Wishlist</string>
+
+    <string name="notification">Notification</string>
+
+    <string name="price_detail">Price Detail</string>
+
+    <string name="price">Price</string>
+
+    <string name="amount_payable">Amount Payable</string>
+
+    <string name="view_price_detail">View Price Detail</string>
+
+    <string name="continue_">CONTINUE</string>
+
+    <string name="sort_by">Sort By</string>
+
+    <string name="filter">Filter</string>
+
+    <string name="color">Color</string>
+
+    <string name="done">Done</string>
+
+    <string name="quick_overview">Quick Overview:</string>
+
+    <string name="more">More</string>
+
+    <string name="comment">Comment</string>
+
+    <string name="review">Review</string>
+
+    <string name="submit">Submit</string>
+
+    <string name="please_apply_rating">Please Apply rating</string>
+
+    <string name="detail">Detail</string>
+
+    <string name="product_highlight">Product Highlights</string>
+
+    <string name="delete_all">Delete All</string>
+    <string name="sign_out">Sign Out</string>
+
+    <string name="do_you_really_want_to_signout">Do you really want to sign out from your Account?</string>
+
+    <string name="sign_up_desc">Sign Up Now and get upto 15\'% discount on all of our products. Offer is valid for very short time.</string>
+
+    <string name="sign_in_now"><u>Sign In Now</u></string>
+
+    <string name="already_account">Already have an account?</string>
+
+    <string name="new_user_register_now"><u>New User? Register Now</u></string>
+
+    <string name="rate_write_review">Rate and write review</string>
+
+    <string name="check_all_review">ALL REVIEWS</string>
+
+    <string name="add_to_Cart">ADD TO CART</string>
+
+    <string name="buy_now"> BUY NOW</string>
+
+    <string name="sold_by">Sold by</string>
+
+    <string name="contact_seller">Contact Seller</string>
+
+    <string name="other_products_from_this_vendor">Other Products from this Vendor</string>
+
+    <string name="review_for_this_vendor">Review for this Vendor</string>
+
+    <string name="all_category">All Category</string>
+
+    <string name="Seller_Information">Seller Information</string>
+
+    <string name="continue_shopping">CONTINUE SHOPPING</string>
+
+    <string name="login_with_facebook">FACEBOOK</string>
+
+    <string name="login_with_google">GOOGLE+</string>
+
+    <string name="sign_in">SIGN IN</string>
+
+    <string name="sign_up">SIGN UP</string>
+
+    <string name="user_name">UserName</string>
+
+    <string name="password">Password</string>
+
+    <string name="forgot_password">Forgot Password?</string>
+
+    <string name="email">Email</string>
+
+    <string name="confirm_password">Confirm Password</string>
+
+    <string name="login">Login</string>
+
+    <string name="view_store">View Store</string>
+
+    <string name="view_detail">View Detail</string>
+
+    <string name="hint_ok">Ok</string>
+
+    <string name="hint_cancel">Cancel</string>
+
+    <string name="enter_email_address">Enter Email Address</string>
+
+    <string name="enter_password">Enter Password</string>
+
+    <string name="enter_confirm_password">Enter Confirm Password</string>
+
+    <string name="password_and_confirm_password_not_matched">Password and Confirm Password does not matched</string>
+
+    <string name="enter_valid_email_address">Enter Valid Email Address</string>
+
+    <string name="enter_username">Enter Username</string>
+
+    <string name="enter_proper_detail">Please, Enter proper detail</string>
+
+    <string name="something_went_wrong">Something Went Wrong</string>
+
+    <string name="enter_name">Enter Name</string>
+
+    <string name="enter_subject">Enter Subject</string>
+
+    <string name="enter_message">Enter Message</string>
+
+    <string name="enter_contact_number">Enter Contact Number</string>
+
+    <string name="message_sent_successfully">Message sent Successfully</string>
+
+    <string name="something_went_wrong_try_after_somtime">Something went wrong \n Try after sometime</string>
+
+    <string name="coupon_code_is_copied_to_clipboard">Coupon code is Copied to Clipboard</string>
+
+    <string name="delivered_soon">Delivered Soon</string>
+
+    <string name="order_is_in_pending_state">Order is in Pending State</string>
+
+    <string name="order_is_under_processing">Order is Under Processing</string>
+
+    <string name="order_is_on_hold">Order is On-Hold</string>
+
+    <string name="delivered">Order is Completed</string>
+
+    <string name="order_is_cancelled">Order is Cancelled</string>
+
+    <string name="you_are_refunded_for_this_order">You are refunded for this order</string>
+
+    <string name="order_is_failed">Order is Failed</string>
+
+    <string name="go_to_cart">GO TO CART</string>
+
+    <string name="drawer_open">Open</string>
+
+    <string name="drawer_close">Close</string>
+
+    <string name="coupon_codes">Coupon Code</string>
+
+    <string name="scratch_here_to_get_scratch_coupon">Scratch here to Get Scratch Coupon</string>
+
+    <string name="my_points">My points</string>
+
+    <string name="event">Event</string>
+
+    <string name="date">Date</string>
+
+    <string name="points">Points</string>
+
+    <string name="you_have_points">You have Points</string>
+
+    <string name="only">Only</string>
+
+    <string name="quntity_is_avilable">Quantity is available</string>
+
+    <string name="my_point">My Points</string>
+
+    <string name="no_points_earned">No Points Earned</string>
+
+    <string name="purchase_product_and_erned_pointa">Purchase product and earn Points</string>
+
+    <string name="availability">Availability:</string>
+
+    <string name="no_data_found">No Data Found</string>
+
+
+    <string name="my_wishlist">My WishList</string>
+
+    <string name="my_account">My Account</string>
+
+    <string name="shop_now">Shop Now</string>
+
+    <string name="newest_first">Newest First</string>
+
+    <string name="rating">Rating</string>
+
+    <string name="popularity">Popularity</string>
+
+    <string name="low_to_high">price -- Low to High</string>
+
+    <string name="high_to_low">price -- High to Low</string>
+
+    <string name="cart">Cart</string>
+
+    <string name="cart_empty">Cart is Empty.</string>
+
+    <string name="items">items</string>
+
+    <string name="no_product_available">No product Available</string>
+
+    <string name="browse_our_store_and_take_a_look_at_other_items_to_buy">Browse our store and take a look at other items to buy.</string>
+
+    <string name="no_coupon_found">No Coupon Found</string>
+
+    <string name="in_stock">In Stock</string>
+
+    <string name="out_of_stock">Out Of Stock</string>
+
+    <string name="exit_from_app">You exit from app</string>
+
+    <string name="permission_need">Permission must be need</string>
+
+    <string name="add_photo">Add Photo</string>
+
+    <string name="take_photo">Take Photo</string>
+
+    <string name="choose_from_library">Choose from Library</string>
+
+    <string name="log_out_success">Logged out Successfully</string>
+
+    <string name="scratch_here_to_get_coupon_code">scratch here to get coupon Code.</string>
+
+    <string name="no_product_found">No product found</string>
+
+    <string name="no_notification_yet">No Notification yet</string>
+
+    <string name="quick_overviews">Quick Overview</string>
+
+    <string name="rate_product">Rate Product</string>
+
+    <string name="your_review_is_waiting_for_approval">Your review is awaiting approval</string>
+
+    <string name="item_added_to_your_cart">Item Added to Your Cart Successfully</string>
+
+    <string name="variation_not_available">This Variation is not Available</string>
+
+    <string name="combition_doesnt_exist">This Combition doesn\'t  exist. Choose another Variant</string>
+
+    <string name="or_sign_up_with">Or Sign up with</string>
+
+    <string name="no_order_found">No Order Found</string>
+
+    <string name="on">On</string>
+
+    <string name="order_id">Order Id-#</string>
+
+    <string name="was_place_on">was placed on</string>
+
+    <string name="and_currently">and currently</string>
+
+    <string name="version">Version :</string>
+
+    <string name="expiration">Expiration</string>
+
+    <string name="remaining">Remaining :</string>
+
+    <string name="download">Download</string>
+
+    <string name="download_complete">Download Complete</string>
+
+    <string name="expire">Expire :</string>
+
+    <string name="my_cart" translatable="false">My Cart</string>
+
+    <string name="search_list_empty">Search List is empty</string>
+
+    <string name="exitformapp">Press again to exit Application</string>
+
+    <string name="featureProducts">Featured Products</string>
+
+    <string name="combition">This Combination doesn\'t exist. Choose another Variant</string>
+
+    <string name="codpay" translatable="false">Pay with cash upon delivery.</string>
+    <string name="home">Home</string>
+    <string name="search_bottom">Search</string>
+    <string name="account">Account</string>
+    <string name="wish_list">Wish List</string>
+    <string name="my_cart_bottom">My Cart</string>
+    <string name="last_status">Last Status</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="track_order">Track Order</string>
+    <string name="track_not_found">Tracking Not found</string>
+    <string name="track">Track</string>
+    <string name="payment">Payment</string>
+
+    <string name="authorize" translatable="false">Authorize</string>
+    <string name="finalize" translatable="false">Finalize</string>
+    <string name="create_order" translatable="false">Order</string>
+    <string name="order_completed" translatable="false">Order completed!</string>
+    <string name="title_activity_order_tracking" translatable="false">OrderTrackingActivity</string>
+    <string name="alert_dialog" translatable="false">You have to set about your address in detail after Sign up or Log in. There are two address Billing address and Shipping address</string>
+
+
+</resources>

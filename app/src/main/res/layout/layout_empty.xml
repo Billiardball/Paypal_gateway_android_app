@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llEmpty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/font_16"
+            android:layout_marginRight="@dimen/font_16"
+            android:layout_weight="0.6"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/font_16"
+            android:layout_marginEnd="@dimen/font_16">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/font_16"
+                android:src="@drawable/no_product" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="@dimen/font_8"
+            android:layout_marginRight="@dimen/font_8"
+            android:layout_weight="0.40"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/font_8"
+            android:layout_marginEnd="@dimen/font_8">
+
+            <com.shop.arram.customview.textview.TextViewBold
+                android:id="@+id/tvEmptyTitle"
+                style="@android:style/Theme.Black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/font_16"
+                android:text="@string/no_product_available" />
+
+            <com.shop.arram.customview.textview.TextViewLight
+                android:id="@+id/tvEmptyDesc"
+                style="@style/txt_black_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/font_5"
+                android:text="@string/browse_our_store_and_take_a_look_at_other_items_to_buy"
+                android:textAlignment="center" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/font_16"
+                android:layout_marginRight="@dimen/font_16"
+                android:layout_marginTop="@dimen/font_8"
+                android:layout_marginStart="@dimen/font_16"
+                android:layout_marginEnd="@dimen/font_16">
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvContinueShopping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_sign_up_border"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/value_5"
+                    android:paddingLeft="@dimen/font_16"
+                    android:paddingRight="@dimen/font_12"
+                    android:paddingTop="@dimen/value_5"
+                    android:text="@string/continue_shopping"
+                    android:textColor="@color/colorPrimary"
+                    android:paddingEnd="@dimen/font_12"
+                    android:paddingStart="@dimen/font_16" />
+
+                <ImageView
+                    android:id="@+id/ivGo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:paddingRight="@dimen/value_10"
+                    app:srcCompat="@drawable/ic_icon_arrow_right"
+                    android:paddingEnd="@dimen/value_10" />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

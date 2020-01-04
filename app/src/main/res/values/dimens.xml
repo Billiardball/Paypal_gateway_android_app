@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="value_0.5">0.5dp</dimen>
+    <dimen name="thumb_width">30dp</dimen>
+    <dimen name="thumb_height">30dp</dimen>
+
+    <dimen name="bubble_thumb_width">70dp</dimen>
+    <dimen name="bubble_thumb_height">70dp</dimen>
+    <dimen name="app_bar_height">260dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+</resources>

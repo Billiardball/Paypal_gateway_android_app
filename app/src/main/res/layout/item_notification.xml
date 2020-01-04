@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/font_5"
+        android:layout_marginLeft="@dimen/font_8"
+        android:layout_marginRight="@dimen/font_8"
+        android:layout_marginEnd="@dimen/font_8"
+        android:layout_marginStart="@dimen/font_8">
+
+        <com.shop.arram.customview.textview.TextViewMedium
+            style="@style/txt_black_small"
+            android:id="@+id/tvNotificationTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_3"
+            android:layout_marginBottom="@dimen/value_3"
+            android:gravity="start"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:text=""/>
+
+        <com.shop.arram.customview.textview.TextViewLight
+            android:id="@+id/tvNotificationDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_3"
+            android:layout_marginBottom="@dimen/value_3"
+            android:gravity="start"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:text=""/>
+
+        <com.shop.arram.customview.textview.TextViewLight
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/value_3"
+            android:background="@color/gray"/>
+
+    </LinearLayout>
+</LinearLayout>

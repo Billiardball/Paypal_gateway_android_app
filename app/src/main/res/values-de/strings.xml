@@ -1,0 +1,270 @@
+<resources>
+    <string name="app_name">App Name</string>
+    <string name="footer">\ � App Name 2018 | Alle Rechte vorbehalten</string>
+    <string name="search">Suche nach Produkte und Marken</string>
+    <string name="most_popular_poroducts">Beliebte Produkte</string>
+    <string name="related_product">�hnliche Produkte</string>
+
+    <string name="special_offer">Sonderangebote</string>
+    <string name="view_all">Alle ansehen</string>
+
+    <string name="view">Ansehen</string>
+    <string name="only">nur</string>
+    <string name="quntity_is_avilable">Menge verf�gbar</string>
+    <string name="recently_view_product">K�rzlich angesehene Produkte</string>
+    <string name="my_orders">Meine Bestellungen</string>
+    <string name="my_address">Meine Adressen</string>
+    <string name="currency">W�hrung w�hlen</string>
+    <string name="language">Sprache w�hlen</string>
+    <string name="address">Adresse</string>
+    <string name="my_reward">Gutscheine</string>
+    <string name="whatsapp_not_installed">WhatsApp nicht installiert</string>
+    <string name="please_apply_rating">Bewerten Sie hier</string>
+    <string name="comment">Kommentar</string>
+    <string name="review">Bewerten</string>
+    <string name="submit">Senden</string>
+    <string name="rate_app">Bewerten Sie die App</string>
+    <string name="account_setting">Konto-Einstellung</string>
+    <string name="clear_history">Historie l�schen</string>
+    <string name="about_us">�ber uns</string>
+    <string name="contact_us">Kontakt</string>
+    <string name="request_password_reset">FORDERE EIN NEUES PASSWORT AN</string>
+    <string name="set_new_password">NEUES PASSWORT FESTLEGEN</string>
+    <string name="forget_pass_desc">ERROR</string>
+    <string name="forget_pass_pin_desc">Geben Sie die PIN ein, die wir Ihnen in Ihrer registrierten E-Mail-Adresse gesendet haben.</string>
+    <string name="enter_pin">Pin eingeben</string>
+    <string name="now_you_can_enter_new_password">Jetzt k�nnen Sie ein neues Passwort eingeben</string>
+    <string name="saved_Address">2 gespeicherte ADRESSEN</string>
+    <string name="billing_address">Rechnungsadresse</string>
+    <string name="please_add_address">Bitte Adresse hinzuf�gen</string>
+    <string name="add_billing_address">Rechnungsadresse hinzuf�gen</string>
+    <string name="add_shipping_address">VERSANDADRESSE HINZUF�GEN</string>
+    <string name="add">HINZUF�GEN</string>
+    <string name="shipping_address">Lieferanschrift</string>
+    <string name="first_name">Vorname</string>
+    <string name="last_name">Nachname</string>
+    <string name="pincode">Pincode</string>
+    <string name="address1">Adresse 1</string>
+    <string name="address2">Adresse 2</string>
+    <string name="remove">L�SCHEN</string>
+    <string name="edit">BEARBEITEN</string>
+    <string name="city">Stadt</string>
+    <string name="company">Unternehmen</string>
+    <string name="phone_number">Telefonnummer</string>
+    <string name="save">Sparen</string>
+    <string name="cancel">Stornieren</string>
+    <string name="sure">Sicher</string>
+    <string name="date_of_birth">Geburtsdatum</string>
+    <string name="gender">Geschlecht</string>
+    <string name="mobile_number">Handynummer</string>
+    <string name="email_id">E-Mail-ID</string>
+    <string name="change_password">Passwort �ndern</string>
+    <string name="deactive_account">Deaktiviertes Konto</string>
+    <string name="account_deactivated">Konto deaktiviert</string>
+    <string name="thank_you">DANKE</string>
+    <string name="your_order_is_placed_successfully">Ihre Bestellung wird erfolgreich platziert</string>
+    <string name="you_will_notify_in_few_momments">Sie werden in wenigen Momenten benachrichtigt</string>
+    <string name="coupon_code">Gutschein \ Code</string>
+    <string name="old_password">Altes Passwort</string>
+    <string name="new_password">Neues Kennwort</string>
+    <string name="enter_new_password">Neues Passwort eingeben</string>
+    <string name="confirm_new_password">Best�tige neues Passwort</string>
+    <string name="retype_password">Passwort erneut eingeben</string>
+    <string name="confirm_deactivation">BEST�TIGE DEAKTIVIERUNG</string>
+    <string name="add_new_addresses">Neue Adresse hinzuf�gen</string>
+    <string name="reset_your_world">Setze deine Welt zur�ck</string>
+    <string name="terms_condition">Allgemeine Gesch�ftsbedingungen</string>
+    <string name="privacy_policy">Datenschutz-Bestimmungen</string>
+    <string name="follow_us">Folge uns</string>
+    <string name="more_about_us">Mehr �ber uns</string>
+    <string name="name">Name</string>
+    <string name="contact_number">Kontakt Nummer</string>
+    <string name="subject">Gegenstand</string>
+    <string name="message">Botschaft</string>
+    <string name="send">SENDEN</string>
+    <string name="rate_and_review_products">Bewerte das Produkt</string>
+    <string name="order">Auftrag</string>
+    <string name="product">Produkt</string>
+    <string name="total">Gesamt</string>
+    <string name="order_detail">Bestelldetails</string>
+    <string name="sub_total">Zwischensumme</string>
+    <string name="shipping">Versand</string>
+    <string name="payment_method">Bezahlverfahren</string>
+    <string name="customer_detail">Kundendetail</string>
+    <string name="phone">Telefon</string>
+    <string name="cancel_order">BESTELLUNG STORNIEREN</string>
+    <string name="claer">l�schen</string>
+    <string name="this_permentantly_clear_you_history">Dies l�scht den Suchverlauf von diesem Ger�t dauerhaft.</string>
+    <string name="address_updated_successfully">Adresse wurde erfolgreich aktualisiert</string>
+    <string name="information_updated_successfully">Informationen wurden erfolgreich aktualisiert</string>
+    <string name="my_wish_list">Favoriten</string>
+    <string name="notification">Benachrichtigung</string>
+    <string name="price_detail">Preis Detail</string>
+    <string name="price"> Preis</string>
+    <string name="amount_payable">zahlbarer Betrag</string>
+    <string name="view_price_detail">Preisdetails anzeigen</string>
+    <string name="continue_">FORTSETZEN</string>
+    <string name="sort_by">Sortiere nach</string>
+    <string name="filter">Filter</string>
+    <string name="color">Farbe</string>
+    <string name="done">Erledigt</string>
+    <string name="quick_overview">�berblick:</string>
+    <string name="more">Mehr</string>
+    <string name="detail">Detail</string>
+    <string name="product_highlight">Produkt H�hepunkte</string>
+    <string name="delete_all">Alles l�schen</string>
+    <string name="sign_out">Ausloggen</string>
+    <string name="do_you_really_want_to_signout">M�chten Sie sich wirklich von Ihrem Konto abmelden?</string>
+    <string name="sign_up_desc">Melden Sie sich jetzt an und erhalten Sie bis zu 15% Rabatt auf alle unsere Produkte. Das Angebot gilt f�r sehr kurze Zeit.</string>
+    <string name="sign_in_now"><u>Jetzt anmelden</u></string>
+    <string name="already_account">Hast du schon ein Konto?</string>
+    <string name="new_user_register_now"><u>Neuer Benutzer? Jetzt registrieren</u></string>
+    <string name="rate_write_review">Bewerten</string>
+    <string name="add_to_Cart">Zum Warenkorb hinzuf�gen</string>
+    <string name="buy_now">Direkt zum Warenkorb</string>
+    <string name="sold_by">Verkauft durch</string>
+    <string name="contact_seller">Verk�ufer kontaktieren</string>
+    <string name="other_products_from_this_vendor">Andere Produkte von diesem Verk�ufer</string>
+    <string name="review_for_this_vendor">Bewertung f�r diesen Anbieter</string>
+    <string name="all_category">Alle Kategorien</string>
+    <string name="Seller_Information">Angaben zum Verk�ufer</string>
+    <string name="continue_shopping">MIT DEM EINKAUFEN FORTFAHREN</string>
+    <string name="login_with_facebook">FACEBOOK</string>
+    <string name="login_with_google">GOOGLE +</string>
+    <string name="sign_in">ANMELDEN</string>
+    <string name="sign_up">ANMELDEN</string>
+    <string name="user_name">Nutzername</string>
+    <string name="password">Passwort</string>
+    <string name="forgot_password">Passwort vergessen?</string>
+    <string name="email">Email</string>
+    <string name="confirm_password">Best�tige das Passwort</string>
+    <string name="login">Anmeldung</string>
+    <string name="view_store">Shop anzeigen</string>
+    <string name="view_detail">Im Detail sehen</string>
+    <string name="hint_ok">OK</string>
+    <string name="hint_cancel">Stornieren</string>
+    <string name="enter_email_address">E-Mail Adresse eingeben</string>
+    <string name="enter_password">Passwort eingeben</string>
+    <string name="enter_confirm_password">Geben Sie Passwort best�tigen ein</string>
+    <string name="password_and_confirm_password_not_matched">Passwort und Passwort best�tigen stimmt nicht �berein</string>
+    <string name="enter_valid_email_address">Geben Sie g�ltige E-Mail-Adresse ein</string>
+    <string name="enter_username">Benutzername eingeben</string>
+    <string name="enter_proper_detail">Bitte geben Sie die richtigen Details ein</string>
+    <string name="something_went_wrong">Komisch... etwas ist schief gelaufen</string>
+    <string name="enter_name">Name eingeben</string>
+    <string name="enter_subject">Geben Sie den Betreff ein</string>
+    <string name="enter_message">Nachricht eingeben - wir freuen uns drauf!</string>
+    <string name="enter_contact_number">Geben Sie die Kontaktnummer ein</string>
+    <string name="message_sent_successfully">Nachricht erfolgreich gesendet</string>
+    <string name="something_went_wrong_try_after_somtime">Irgendetwas ist schief gelaufen \ Versuche es sp�ter nocheinmal</string>
+    <string name="coupon_code_is_copied_to_clipboard">Der Gutscheincode wird in die Zwischenablage kopiert</string>
+    <string name="delivered_soon">Bald geliefert</string>
+    <string name="order_is_in_pending_state">Die Bestellung wird demn�chst bearbeitet</string>
+    <string name="order_is_under_processing">Auftrag ist in Bearbeitung</string>
+    <string name="order_is_on_hold">Die Bestellung ist in Wartestellung</string>
+    <string name="delivered">Bestellung ist abgeschlossen</string>
+    <string name="order_is_cancelled">Der Auftrag wurde storniert</string>
+    <string name="you_are_refunded_for_this_order">Sie werden f�r diese Bestellung erstattet</string>
+    <string name="order_is_failed">Bestellung ist fehlgeschlagen</string>
+    <string name="go_to_cart">ZUM EINKAUFSKORB GEHEN</string>
+    <string name="coupon_codes">Gutscheincode</string>
+    <string name="scratch_here_to_get_scratch_coupon">Wische hier, um Gutschein zu erhalten</string>
+
+    <string name="my_points">Meine Punkte</string>
+    <string name="event">Ereignis</string>
+    <string name="date">Datum</string>
+    <string name="points">Punkte</string>
+    <string name="you_have_points">Du hast Punkte</string>
+    <string name="my_point">Meine Punkte</string>
+    <string name="no_points_earned">Keine Punkte verdient</string>
+    <string name="purchase_product_and_erned_pointa">Kaufe ein Produkt und verdiene Punkte</string>
+    <string name="availability">Verf�gbarkeit:</string>
+    <string name="no_data_found">Keine Daten gefunden</string>
+    <string name="my_cart">Mein Warenkorb</string>
+    <string name="my_wishlist">Meine Favoriten</string>
+    <string name="my_account">Mein Konto</string>
+    <string name="shop_now">Jetzt einkaufen</string>
+    <string name="newest_first">Das neuste zuerst</string>
+    <string name="rating">Bewertung</string>
+    <string name="popularity">Popularit�t</string>
+    <string name="low_to_high">Preis niedrig bis hoch</string>
+    <string name="high_to_low">Preis - Hoch zu niedrig</string>
+
+    <string name="cart">Einkaufswagen</string>
+    <string name="cart_empty">Einkaufswagen ist leer.</string>
+    <string name="items">Artikel</string>
+    <string name="no_product_available">Kein Produkt verf�gbar</string>
+    <string name="browse_our_store_and_take_a_look_at_other_items_to_buy">Durchsuchen Sie unseren Shop und schauen Sie sich weitere Artikel an, die Sie kaufen k�nnen.</string>
+    <string name="no_coupon_found">Kein Gutschein gefunden</string>
+
+    <string name="in_stock">Auf Lager</string>
+    <string name="out_of_stock">Ausverkauft</string>
+
+    <string name="exit_from_app">Sie verlassen die App</string>
+    <string name="permission_need">Erlaubnis muss notwendig sein</string>
+    <string name="add_photo">Foto hinzuf�gen</string>
+    <string name="take_photo">Foto machen</string>
+    <string name="choose_from_library">Aus der Bibliothek ausw�hlen</string>
+    <string name="log_out_success">Erfolgreich abgemeldet</string>
+
+    <string name="scratch_here_to_get_coupon_code">Wischen Sie hier, um Gutscheincode zu erhalten.</string>
+    <string name="no_product_found">Kein Produkt gefunden</string>
+    <string name="no_notification_yet">Noch keine Benachrichtigung</string>
+    <string name="quick_overviews">Schneller �berblick</string>
+    <string name="rate_product">Produkt bewerten</string>
+    <string name="your_review_is_waiting_for_approval">Ihre Bewertung wartet auf ihre Genehmigung</string>
+    <string name="item_added_to_your_cart">Artikel wurde Ihrem Einkaufswagen erfolgreich hinzugef�gt</string>
+    <string name="variation_not_available">Diese Variation ist nicht verf�gbar</string>
+    <string name="combition_doesnt_exist">Diese Combition existiert nicht. W�hlen Sie eine andere Variante</string>
+    <string name="or_sign_up_with">Oder melden Sie sich an</string>
+    <string name="no_order_found">Keine Bestellung gefunden</string>
+    <string name="on">Auf</string>
+    <string name="order_id">Auftragsnummer-#</string>
+    <string name="was_place_on">wurde aufgelegt</string>
+
+    <string name="and_currently">und derzeit</string>
+
+    <string name="version">Version:</string>
+
+    <string name="download">Herunterladen</string>
+
+    <string name="expiration">Ablauf</string>
+
+    <string name="remaining">Verbleibend :</string>
+
+    <string name="download_complete">Download abgeschlossen</string>
+
+    <string name="expire">L�uft ab:</string>
+
+    <string name="search_list_empty">Suchliste ist leer</string>
+
+    <string name="exitformapp">Dr�cken Sie erneut, um die Anwendung zu beenden</string>
+
+    <string name="internet_not_working">Bitte �berpr�fen Sie Ihre Internetverbindung und versuchen Sie es sp�ter erneut</string>
+
+    <string name="drawer_open">�ffnen</string>
+
+    <string name="drawer_close">Schlie�en</string>
+
+    <string name="check_all_review">�berpr�fen Sie alle Bewertungen</string>
+
+    <string name="featureProducts">Gekennzeichnete Produkte</string>
+
+    <string name="combition">Diese Kombination existiert nicht. W�hlen Sie eine andere Variante</string>
+
+    <string name="clear_filter">Filter löschen</string>
+    <string name="codpay">Pay with cash upon delivery.</string>
+    <string name="search_bottom">Suche</string>
+    <string name="home">Zuhause</string>
+    <string name="account">Konto</string>
+    <string name="my_cart_bottom">Mein Warenkorb</string>
+    <string name="wish_list">Wunschzettel</string>
+    <string name="last_status">Letzter Status</string>
+    <string name="from">Von</string>
+    <string name="to">Zu</string>
+    <string name="track_order">Versandverfolgung</string>
+    <string name="track_not_found">Tracking nicht gefunden</string>
+    <string name="track">Spur</string>
+    <string name="payment">Zahlung</string>
+
+</resources>

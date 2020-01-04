@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.shop.arram.customview.textview.TextViewMedium
+            style="@style/txt_white_small"
+            android:id="@+id/tvImageDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_border"
+            android:layout_gravity="end"
+            android:gravity="center"
+            android:layout_margin="@dimen/value_8"
+            android:paddingTop="@dimen/value_2"
+            android:paddingBottom="@dimen/value_2"
+            android:paddingRight="@dimen/value_3"
+            android:paddingLeft="@dimen/value_3"
+            android:text="@string/done"
+            android:paddingStart="@dimen/value_3"
+            android:paddingEnd="@dimen/value_3" />
+
+
+
+    </FrameLayout>
+
+</LinearLayout>

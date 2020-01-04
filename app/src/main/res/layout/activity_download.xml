@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/layout_empty"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/llContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/value_5"
+                    android:layout_marginRight="@dimen/value_5"
+                    android:visibility="gone"
+                    android:orientation="horizontal">
+
+                    <com.shop.arram.customview.textview.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/value_5"
+                        android:layout_weight="0.7"
+                        android:maxLines="2"
+                        android:text="@string/product"
+                        android:theme="@style/txt_gray_micro" />
+
+                    <com.shop.arram.customview.textview.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/value_5"
+                        android:layout_weight="0.2"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/remaining"
+                        android:theme="@style/txt_gray_micro" />
+
+                    <com.shop.arram.customview.textview.TextViewRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/value_5"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="@string/expiration"
+                        android:theme="@style/txt_gray_micro" />
+
+                    <ImageView
+                        android:id="@+id/ivDownload"
+                        android:layout_width="@dimen/value_25"
+                        android:layout_height="@dimen/value_20"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/value_3"
+                        android:background="@color/gray_dark"
+                        android:padding="@dimen/value_5"
+                        android:visibility="invisible"
+                        app:srcCompat="@drawable/ic_download" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_0.5"
+                    android:layout_marginLeft="@dimen/value_5"
+                    android:layout_marginRight="@dimen/value_5"
+                    android:background="@color/gray_dark" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvDownload"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/value_5" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/layout_whatsapp" />
+
+</android.support.design.widget.CoordinatorLayout>

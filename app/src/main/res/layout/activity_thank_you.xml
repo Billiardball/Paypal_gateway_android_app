@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/crMain"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/font_8"
+                android:layout_marginRight="@dimen/font_8"
+                android:orientation="vertical"
+                android:layout_marginEnd="@dimen/font_8"
+                android:layout_marginStart="@dimen/font_8">
+
+                <com.shop.arram.customview.textview.TextViewBold
+                    style="@style/txt_color_primary_very_big"
+                    android:id="@+id/tvThankYou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/font_10"
+                    android:text="@string/thank_you" />
+
+                <com.shop.arram.customview.textview.TextViewBold
+                    style="@style/txt_color_primary_medium"
+                    android:id="@+id/tvOrderPlaceSuccess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/font_12"
+                    android:text="@string/your_order_is_placed_successfully" />
+
+                <com.shop.arram.customview.textview.TextViewLight
+                    style="@style/txt_gray_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/font_5"
+                    android:text="@string/you_will_notify_in_few_momments"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/font_16"
+                    android:src="@drawable/thank_you_image" />
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/font_16"
+                android:layout_marginRight="@dimen/font_16"
+                android:layout_marginTop="@dimen/font_8"
+                android:layout_marginStart="@dimen/font_16"
+                android:layout_marginEnd="@dimen/font_16">
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvContinueShopping"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_sign_up_border"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/value_5"
+                    android:paddingLeft="@dimen/font_16"
+                    android:paddingRight="@dimen/font_12"
+                    android:paddingTop="@dimen/value_5"
+                    android:text="@string/continue_shopping"
+                    android:textColor="@color/colorPrimary"
+                    android:paddingStart="@dimen/font_16"
+                    android:paddingEnd="@dimen/font_12" />
+
+                <ImageView
+                    android:id="@+id/ivGo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:paddingRight="@dimen/value_10"
+                    app:srcCompat="@drawable/ic_icon_arrow_right"
+                    android:paddingEnd="@dimen/value_10" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+    <include layout="@layout/layout_whatsapp" />
+
+</android.support.design.widget.CoordinatorLayout>

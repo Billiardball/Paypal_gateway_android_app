@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.klarna.checkout:sdk:1.6.11@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sdk-1.6.11.aar/ab8a7cc19cd48cdf6d312918f77f4b73/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sdk-1.6.11.aar/ab8a7cc19cd48cdf6d312918f77f4b73/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

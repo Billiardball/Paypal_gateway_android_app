@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/font_8"
+        android:layout_marginRight="@dimen/font_8"
+        android:layout_marginTop="@dimen/font_8"
+        android:layout_marginEnd="@dimen/font_8"
+        android:layout_marginStart="@dimen/font_8">
+
+        <LinearLayout
+            android:id="@+id/llReward"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/reward1"
+
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llScratched"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.shop.arram.customview.textview.TextViewRegular
+                        style="@style/txt_white_micro"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.25"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/font_8"
+                        android:text="@string/coupon_code"
+                        android:paddingStart="@dimen/font_8" />
+
+                    <com.shop.arram.customview.textview.TextViewBold
+                        android:id="@+id/tvCouponCode"
+                        style="@style/txt_white_big"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.75"
+                        android:gravity="center"
+                        android:text="#1234567890" />
+
+                </LinearLayout>
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvCouponDesc"
+                    style="@style/txt_white_micro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/value_10"
+                    android:layout_marginRight="@dimen/value_10"
+                    android:layout_marginTop="@dimen/font_8"
+                    android:maxLines="3"
+                    android:text="@string/sign_up_desc"
+                    android:textAlignment="center"
+                    android:layout_marginEnd="@dimen/value_10"
+                    android:layout_marginStart="@dimen/value_10" />
+
+
+            </LinearLayout>
+
+            <com.shop.arram.customview.textview.TextViewRegular
+                android:id="@+id/tvScretchText"
+                style="@style/txt_white_small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:alpha="0.8"
+                android:gravity="center"
+                android:text="@string/scratch_here_to_get_coupon_code" />
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

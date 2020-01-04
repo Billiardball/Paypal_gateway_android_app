@@ -1,0 +1,790 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <include layout="@layout/toolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.9">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/value_10"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    style="@style/txt_gray_big"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/order" />
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    android:id="@+id/tvOrderId"
+                                    style="@style/txt_color_primary_big"
+                                    android:layout_width="wrap_content"
+
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="@dimen/value_5"
+                                    android:layout_marginLeft="@dimen/value_5"
+                                    android:text="#252" />
+                            </LinearLayout>
+
+
+                            <com.shop.arram.customview.textview.TextViewBold
+                                android:id="@+id/tv_trackbutton"
+                                style="@style/txt_white_small"
+                                android:layout_width="100dp"
+                                android:background="@color/colorPrimary"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:padding="@dimen/value_5"
+                                android:text="@string/track"
+                                />
+                        </LinearLayout>
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:id="@+id/tvOrderDateAndStatus"
+                            style="@style/txt_gray_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_10"
+                            android:text="" />
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:id="@+id/tvTrackMessage1"
+                            style="@style/txt_gray_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_10" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <com.shop.arram.customview.textview.TextViewRegular
+                                android:id="@+id/tvTrackMessage2"
+                                style="@style/txt_gray_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/value_3" />
+
+                            <com.shop.arram.customview.textview.TextViewRegular
+                                android:id="@+id/tvTrackID"
+                                style="@style/txt_gray_medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/value_3" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.shop.arram.customview.textview.TextViewRegular
+                                style="@style/txt_black_big"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/value_10"
+                                android:text="@string/order_detail" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/value_5"
+                                android:orientation="vertical">
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_0.5"
+                                    android:background="@color/gray_table" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewBold
+                                        style="@style/txt_black_medium"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:padding="@dimen/value_5"
+                                        android:text="@string/product" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewBold
+                                        style="@style/txt_black_medium"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:padding="@dimen/value_5"
+                                        android:text="@string/total" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                </LinearLayout>
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_0.5"
+                                    android:background="@color/gray_table" />
+
+                                <android.support.v7.widget.RecyclerView
+                                    android:id="@+id/rvOrderedContent"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+
+                                </android.support.v7.widget.RecyclerView>
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_0.5"
+                                    android:background="@color/gray_table" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewBold
+                                        style="@style/txt_black_medium"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:padding="@dimen/value_5"
+                                        android:text="@string/sub_total" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewBold
+                                        android:id="@+id/tvSubTotal"
+                                        style="@style/txt_black_medium"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:padding="@dimen/value_5"
+                                        android:text="" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                </LinearLayout>
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_0.5"
+                                    android:background="@color/gray_table" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewBold
+                                        style="@style/txt_black_medium"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:padding="@dimen/value_5"
+                                        android:text="@string/shipping" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewBold
+                                        android:id="@+id/tvShippingCharges"
+                                        style="@style/txt_black_medium"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:padding="@dimen/value_5"
+                                        android:text="" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                </LinearLayout>
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_0.5"
+                                    android:background="@color/gray_table" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewBold
+                                        style="@style/txt_black_medium"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:padding="@dimen/value_5"
+                                        android:text="@string/payment_method" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewBold
+                                        android:id="@+id/tvPaymentMethodTitle"
+                                        style="@style/txt_black_medium"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:padding="@dimen/value_5"
+                                        android:text="" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                </LinearLayout>
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_0.5"
+                                    android:background="@color/gray_table" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewBold
+                                        style="@style/txt_black_medium"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:padding="@dimen/value_5"
+                                        android:text="@string/total" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewBold
+                                        android:id="@+id/tvTotal"
+                                        style="@style/txt_black_medium"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:padding="@dimen/value_5"
+                                        android:text="" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                </LinearLayout>
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_0.5"
+                                    android:background="@color/gray_table" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/value_20"
+                            android:orientation="vertical">
+
+                            <com.shop.arram.customview.textview.TextViewRegular
+                                style="@style/txt_black_big"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/value_5"
+                                android:text="@string/customer_detail" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/value_5"
+                                android:orientation="vertical">
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_0.5"
+                                    android:background="@color/gray_table" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        style="@style/txt_black_small"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:padding="@dimen/value_5"
+                                        android:text="@string/email" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewLight
+                                        android:id="@+id/tvEmail"
+                                        style="@style/txt_black_small"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:padding="@dimen/value_5" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                </LinearLayout>
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_0.5"
+                                    android:background="@color/gray_table" />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewBold
+                                        style="@style/txt_black_small"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:padding="@dimen/value_5"
+                                        android:text="@string/phone" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewLight
+                                        android:id="@+id/tvPhone"
+                                        style="@style/txt_black_small"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.5"
+                                        android:padding="@dimen/value_5" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                </LinearLayout>
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_0.5"
+                                    android:background="@color/gray_table" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewBold
+                                        style="@style/txt_black_small"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/value_5"
+                                        android:layout_marginLeft="@dimen/value_5"
+                                        android:layout_marginTop="@dimen/value_3"
+                                        android:layout_weight="0.99"
+                                        android:text="@string/billing_address" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.99"
+                                        android:orientation="vertical">
+
+                                        <com.shop.arram.customview.textview.TextViewLight
+                                            android:id="@+id/tvBillingCompanyName"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/value_5"
+                                            android:layout_marginLeft="@dimen/value_5"
+                                            android:layout_marginTop="@dimen/value_5"
+                                            android:layout_marginEnd="@dimen/value_5"
+                                            android:layout_marginRight="@dimen/value_5"
+                                            android:maxLines="5" />
+
+                                        <com.shop.arram.customview.textview.TextViewLight
+                                            android:id="@+id/tvBillingName"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/value_5"
+                                            android:layout_marginLeft="@dimen/value_5"
+                                            android:layout_marginTop="@dimen/value_3"
+                                            android:layout_marginEnd="@dimen/value_5"
+                                            android:layout_marginRight="@dimen/value_5"
+                                            android:maxLines="5"
+                                            android:text=" " />
+
+                                        <com.shop.arram.customview.textview.TextViewLight
+                                            android:id="@+id/tvBillingAddress1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/value_5"
+                                            android:layout_marginLeft="@dimen/value_5"
+                                            android:layout_marginTop="@dimen/value_3"
+                                            android:layout_marginEnd="@dimen/value_5"
+                                            android:layout_marginRight="@dimen/value_5"
+                                            android:maxLines="5"
+                                            android:text=" " />
+
+                                        <com.shop.arram.customview.textview.TextViewLight
+                                            android:id="@+id/tvBillingAddress2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/value_5"
+                                            android:layout_marginLeft="@dimen/value_5"
+                                            android:layout_marginTop="@dimen/value_3"
+                                            android:layout_marginEnd="@dimen/value_5"
+                                            android:layout_marginRight="@dimen/value_5"
+                                            android:maxLines="5"
+                                            android:text=" " />
+
+                                        <com.shop.arram.customview.textview.TextViewLight
+                                            android:id="@+id/tvBillingCityPin"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/value_5"
+                                            android:layout_marginLeft="@dimen/value_5"
+                                            android:layout_marginTop="@dimen/value_3"
+                                            android:layout_marginEnd="@dimen/value_5"
+                                            android:layout_marginRight="@dimen/value_5"
+                                            android:maxLines="5"
+                                            android:text=" " />
+
+                                        <com.shop.arram.customview.textview.TextViewLight
+                                            android:id="@+id/tvBillingCountryState"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/value_5"
+                                            android:layout_marginLeft="@dimen/value_5"
+                                            android:layout_marginTop="@dimen/value_3"
+                                            android:layout_marginEnd="@dimen/value_5"
+                                            android:layout_marginRight="@dimen/value_5"
+                                            android:layout_marginBottom="@dimen/value_5"
+                                            android:maxLines="5"
+                                            android:text=" " />
+
+                                    </LinearLayout>
+
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                </LinearLayout>
+
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_0.5"
+                                    android:background="@color/gray_table" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <com.shop.arram.customview.textview.TextViewBold
+                                        style="@style/txt_black_small"
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/value_5"
+                                        android:layout_marginLeft="@dimen/value_5"
+                                        android:layout_marginTop="@dimen/value_3"
+                                        android:layout_weight="0.99"
+                                        android:text="@string/shipping_address" />
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                    <LinearLayout
+                                        android:layout_width="0dp"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="0.99"
+                                        android:orientation="vertical">
+
+                                        <com.shop.arram.customview.textview.TextViewLight
+                                            android:id="@+id/tvShippingCompanyName"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/value_5"
+                                            android:layout_marginLeft="@dimen/value_5"
+                                            android:layout_marginTop="@dimen/value_5"
+                                            android:layout_marginEnd="@dimen/value_5"
+                                            android:layout_marginRight="@dimen/value_5"
+                                            android:maxLines="5"
+                                            android:text=" " />
+
+                                        <com.shop.arram.customview.textview.TextViewLight
+                                            android:id="@+id/tvShippingName"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/value_5"
+                                            android:layout_marginLeft="@dimen/value_5"
+                                            android:layout_marginTop="@dimen/value_3"
+                                            android:layout_marginEnd="@dimen/value_5"
+                                            android:layout_marginRight="@dimen/value_5"
+                                            android:maxLines="5"
+                                            android:text=" " />
+
+                                        <com.shop.arram.customview.textview.TextViewLight
+                                            android:id="@+id/tvShippingAddress1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/value_5"
+                                            android:layout_marginLeft="@dimen/value_5"
+                                            android:layout_marginTop="@dimen/value_3"
+                                            android:layout_marginEnd="@dimen/value_5"
+                                            android:layout_marginRight="@dimen/value_5"
+                                            android:maxLines="5"
+                                            android:text=" " />
+
+                                        <com.shop.arram.customview.textview.TextViewLight
+                                            android:id="@+id/tvShippingAddress2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/value_5"
+                                            android:layout_marginLeft="@dimen/value_5"
+                                            android:layout_marginTop="@dimen/value_3"
+                                            android:layout_marginEnd="@dimen/value_5"
+                                            android:layout_marginRight="@dimen/value_5"
+                                            android:maxLines="5"
+                                            android:text=" " />
+
+                                        <com.shop.arram.customview.textview.TextViewLight
+                                            android:id="@+id/tvShippingCityPin"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/value_5"
+                                            android:layout_marginLeft="@dimen/value_5"
+                                            android:layout_marginTop="@dimen/value_3"
+                                            android:layout_marginEnd="@dimen/value_5"
+                                            android:layout_marginRight="@dimen/value_5"
+                                            android:maxLines="5"
+                                            android:text=" " />
+
+                                        <com.shop.arram.customview.textview.TextViewLight
+                                            android:id="@+id/tvShippingCountryState"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginStart="@dimen/value_5"
+                                            android:layout_marginLeft="@dimen/value_5"
+                                            android:layout_marginTop="@dimen/value_3"
+                                            android:layout_marginEnd="@dimen/value_5"
+                                            android:layout_marginRight="@dimen/value_5"
+                                            android:layout_marginBottom="@dimen/value_5"
+                                            android:maxLines="5"
+                                            android:text=" " />
+
+                                    </LinearLayout>
+
+                                    <com.shop.arram.customview.textview.TextViewRegular
+                                        android:layout_width="@dimen/value_0.5"
+                                        android:layout_height="match_parent"
+                                        android:background="@color/gray_table" />
+
+                                </LinearLayout>
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    android:layout_width="match_parent"
+                                    android:layout_height="@dimen/value_0.5"
+                                    android:background="@color/gray_table" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </android.support.v4.widget.NestedScrollView>
+
+                <com.shop.arram.customview.textview.TextViewBold
+                    android:id="@+id/tvCancelOrder"
+                    style="@style/txt_white_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:padding="@dimen/value_5"
+                    android:text="@string/cancel_order" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_whatsapp" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/value_5"
+    android:layout_marginLeft="@dimen/value_5"
+    android:layout_marginRight="@dimen/value_5"
+    android:orientation="vertical"
+    android:layout_marginStart="@dimen/value_5"
+    android:layout_marginEnd="@dimen/value_5">
+
+    <com.shop.arram.customview.textview.TextViewRegular
+        android:id="@+id/tvTitle"
+        style="@style/txt_gray_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/gray_strok"
+        android:gravity="start|center"
+        android:paddingBottom="@dimen/value_4"
+        android:paddingLeft="@dimen/value_8"
+        android:paddingRight="@dimen/value_8"
+        android:paddingTop="@dimen/value_4"
+        android:text="@string/color"
+        android:paddingStart="@dimen/value_8"
+        app:drawableEndCompat="@drawable/ic_down"
+        android:paddingEnd="@dimen/value_8" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+     />
+
+
+</LinearLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMain"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="@dimen/value_2.5"
+    android:orientation="horizontal"
+    android:layout_marginEnd="@dimen/value_2.5">
+
+    <com.shop.arram.customview.textview.TextViewLight
+        android:id="@+id/tvLeft"
+        android:layout_width="@dimen/value_5"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.9">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black_transparent" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/value_5"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <com.shop.arram.customview.textview.TextViewBold
+                    android:id="@+id/tvName"
+                    style="@style/txt_white_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="" />
+
+                <com.shop.arram.customview.textview.TextViewMedium
+                    style="@style/txt_black_micro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/value_3"
+                    android:background="@drawable/rounded_corner"
+                    android:gravity="center"
+                    android:paddingBottom="@dimen/value_2"
+                    android:paddingLeft="@dimen/value_5"
+                    android:paddingRight="@dimen/value_5"
+                    android:paddingTop="@dimen/value_2"
+                    android:text="@string/shop_now"
+                    android:paddingEnd="@dimen/value_5"
+                    android:paddingStart="@dimen/value_5" />
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <com.shop.arram.customview.textview.TextViewLight
+        android:id="@+id/tvRight"
+        android:layout_width="@dimen/value_2.5"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

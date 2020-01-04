@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_170"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvProductVariation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/value_10"
+            android:layout_marginTop="@dimen/value_2">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <com.shop.arram.customview.textview.TextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_0.5"
+        android:background="@color/gray_table" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.shop.arram.customview.textview.TextViewRegular
+            android:id="@+id/tvCancel"
+            style="@style/txt_color_primary_medium"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:padding="@dimen/value_6"
+            android:text="@string/cancel" />
+
+        <com.shop.arram.customview.textview.TextViewRegular
+            android:id="@+id/tvDone"
+            style="@style/txt_white_medium"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/value_5"
+            android:text="@string/done" />
+
+    </LinearLayout>
+
+</LinearLayout>

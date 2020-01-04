@@ -1,0 +1,221 @@
+<resources>
+
+    <!-- Declare custom theme attributes that allow changing which styles are
+         used for button bars depending on the API level.
+         ?android:attr/buttonBarStyle is new as of API 11 so this is
+         necessary to support previous API levels. -->
+
+    <declare-styleable name="GeometricProgressViews">
+        <attr name="gp_type" format="enum">
+            <enum name="kite" value="0" />
+            <enum name="triangle" value="1" />
+        </attr>
+        <attr name="gp_number_of_angles" format="integer" />
+        <attr name="gp_color" format="color" />
+        <attr name="gp_duration" format="integer" />
+        <attr name="gp_figure_padding" format="dimension" />
+        <attr name="gp_style" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomTextView">
+        <attr name="drawableStartCompat" format="reference"/>
+        <attr name="drawableEndCompat" format="reference"/>
+        <attr name="drawableTopCompat" format="reference"/>
+        <attr name="drawableBottomCompat" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PullToZoomView">
+        <attr name="headerView" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="zoomView" format="reference" />
+        <attr name="isHeaderParallax" format="boolean" />
+    </declare-styleable>
+
+
+
+
+    <declare-styleable name="SwipeRevealLayout">
+        <attr name="dragEdge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+
+        <attr name="mode">
+            <enum name="normal" value="0" />
+            <enum name="same_level" value="1" />
+        </attr>
+
+        <attr name="flingVelocity" format="integer" />
+
+        <attr name="minDistRequestDisallowParent" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="sparkbutton">
+        <attr name="sparkbutton_iconSize" format="dimension|reference" />
+        <attr name="sparkbutton_activeImage" format="reference" />
+        <attr name="sparkbutton_inActiveImage" format="reference" />
+        <attr name="sparkbutton_primaryColor" format="reference" />
+        <attr name="sparkbutton_secondaryColor" format="reference" />
+        <attr name="sparkbutton_pressOnTouch" format="boolean" />
+        <attr name="sparkbutton_animationSpeed" format="float" />
+        <attr name="sparkbutton_activeImageTint" format="reference" />
+        <attr name="sparkbutton_inActiveImageTint" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundCornerProgress">
+        <attr name="rcReverse" format="boolean" />
+        <attr name="rcProgress" format="float" />
+        <attr name="rcMax" format="float" />
+        <attr name="rcSecondaryProgress" format="float" />
+        <attr name="rcBackgroundPadding" format="dimension" />
+        <attr name="rcRadius" format="dimension" />
+        <attr name="rcProgressColor" format="color" />
+        <attr name="rcSecondaryProgressColor" format="color" />
+        <attr name="rcBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <!-- Common attributes -->
+    <attr name="corner_radius" format="float" />
+    <attr name="min_value" format="float" />
+    <attr name="max_value" format="float" />
+    <attr name="min_start_value" format="float" />
+    <attr name="max_start_value" format="float" />
+    <attr name="steps" format="float" />
+    <attr name="gap" format="float" />
+    <attr name="fix_gap" format="float" />
+    <attr name="bar_color_mode" format="enum">
+        <enum name="solid" value="0" />
+        <enum name="gradient" value="1" />
+    </attr>
+    <attr name="bar_color" format="color" />
+    <attr name="bar_gradient_start" format="color" />
+    <attr name="bar_gradient_end" format="color" />
+    <attr name="bar_highlight_color_mode" format="enum">
+        <enum name="solid" value="0" />
+        <enum name="gradient" value="1" />
+    </attr>
+    <attr name="bar_highlight_color" format="color" />
+    <attr name="bar_highlight_gradient_start" format="color" />
+    <attr name="bar_highlight_gradient_end" format="color" />
+    <attr name="thumb_diameter" format="dimension" />
+    <attr name="position" format="enum">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+    </attr>
+    <attr name="data_type" format="enum">
+        <enum name="_long" value="0" />
+        <enum name="_double" value="1" />
+        <enum name="_integer" value="2" />
+        <enum name="_float" value="3" />
+        <enum name="_short" value="4" />
+        <enum name="_byte" value="5" />
+    </attr>
+
+    <!-- Seekbar -->
+    <declare-styleable name="CrystalSeekbar">
+        <attr name="corner_radius" />
+        <attr name="min_value" />
+        <attr name="max_value" />
+        <attr name="min_start_value" />
+        <attr name="max_start_value" />
+        <attr name="steps" />
+        <attr name="gap" />
+        <attr name="fix_gap" />
+        <attr name="bar_color_mode" />
+        <attr name="bar_color" />
+        <attr name="bar_gradient_start" />
+        <attr name="bar_gradient_end" />
+        <attr name="bar_highlight_color_mode" />
+        <attr name="bar_highlight_color" />
+        <attr name="bar_highlight_gradient_start" />
+        <attr name="bar_highlight_gradient_end" />
+        <attr name="thumb_diameter" />
+        <attr name="position" />
+        <attr name="data_type" />
+        <attr name="thumb_color" format="color" />
+        <attr name="thumb_color_pressed" format="color" />
+        <attr name="thumb_image" format="reference" />
+        <attr name="thumb_image_pressed" format="reference" />
+    </declare-styleable>
+
+    <!-- Range Seekbar -->
+    <declare-styleable name="CrystalRangeSeekbar">
+        <attr name="corner_radius" />
+        <attr name="min_value" />
+        <attr name="max_value" />
+        <attr name="min_start_value" />
+        <attr name="max_start_value" />
+        <attr name="steps" />
+        <attr name="gap" />
+        <attr name="fix_gap" />
+        <attr name="bar_color_mode" />
+        <attr name="bar_color" />
+        <attr name="bar_gradient_start" />
+        <attr name="bar_gradient_end" />
+        <attr name="bar_highlight_color_mode" />
+        <attr name="bar_highlight_color" />
+        <attr name="bar_highlight_gradient_start" />
+        <attr name="bar_highlight_gradient_end" />
+        <attr name="thumb_diameter" />
+        <attr name="position" />
+        <attr name="data_type" />
+        <attr name="left_thumb_color" format="color" />
+        <attr name="left_thumb_color_pressed" format="color" />
+        <attr name="left_thumb_image" format="reference" />
+        <attr name="left_thumb_image_pressed" format="reference" />
+        <attr name="right_thumb_color" format="color" />
+        <attr name="right_thumb_color_pressed" format="color" />
+        <attr name="right_thumb_image" format="reference" />
+        <attr name="right_thumb_image_pressed" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="metaButtonBarStyle" format="reference" />
+        <attr name="metaButtonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="MaterialRatingBar">
+        <attr name="mrb_progressTint" format="color|reference" />
+        <attr name="mrb_progressTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+        <attr name="mrb_secondaryProgressTint" format="color|reference" />
+        <attr name="mrb_secondaryProgressTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+        <attr name="mrb_progressBackgroundTint" format="color|reference" />
+        <attr name="mrb_progressBackgroundTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+        <attr name="mrb_indeterminateTint" format="color|reference" />
+        <attr name="mrb_indeterminateTintMode" format="enum">
+            <enum name="src_over" value="3" />
+            <enum name="src_in" value="5" />
+            <enum name="src_atop" value="9" />
+            <enum name="multiply" value="14" />
+            <enum name="screen" value="15" />
+            <enum name="add" value="16" />
+        </attr>
+        <attr name="mrb_fillBackgroundStars" format="boolean" />
+    </declare-styleable>
+
+
+</resources>

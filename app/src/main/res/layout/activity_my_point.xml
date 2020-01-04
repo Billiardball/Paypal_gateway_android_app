@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llMyPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <include layout="@layout/toolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/value_10"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/value_1">
+
+                <com.shop.arram.customview.textview.TextViewLight
+                    style="@style/txt_gray_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="start"
+                    android:text="@string/you_have_points"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale" />
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvMyPoint"
+                    style="@style/txt_color_primary_big"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/value_3"
+                    android:layout_marginStart="@dimen/value_3"
+                    android:gravity="start"
+                    android:text=""
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_0.5"
+                android:layout_marginBottom="@dimen/value_5"
+                android:layout_marginTop="@dimen/value_5"
+                android:background="@color/gray_strok" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_10"
+                android:background="@drawable/gray_strok"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/value_5">
+
+                    <com.shop.arram.customview.textview.TextViewMedium
+                        style="@style/txt_black_small"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:gravity="start"
+                        android:text="@string/event"
+                        android:textAlignment="viewStart"
+                        android:textDirection="locale" />
+
+                    <com.shop.arram.customview.textview.TextViewMedium
+                        style="@style/txt_black_small"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:gravity="start"
+                        android:text="@string/date"
+                        android:textAlignment="viewStart"
+                        android:textDirection="locale" />
+
+                    <com.shop.arram.customview.textview.TextViewMedium
+                        style="@style/txt_black_small"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.2"
+                        android:gravity="start"
+                        android:text="@string/points"
+                        android:textAlignment="viewStart"
+                        android:textDirection="locale" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_0.5"
+                    android:background="@color/gray_strok" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvMyPoints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_whatsapp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            layout="@layout/layout_empty"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

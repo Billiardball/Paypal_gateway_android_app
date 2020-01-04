@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/value_5"
+    android:layout_marginTop="@dimen/value_5"
+    android:orientation="vertical">
+
+    <com.shop.arram.customview.textview.TextViewLight
+        android:id="@+id/tvName"
+        style="@style/txt_black_small"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start|center"
+        android:layout_marginLeft="@dimen/value_5"
+        android:layout_marginRight="@dimen/value_8"
+        android:gravity="start|center"
+        android:text=""
+        android:layout_marginStart="@dimen/value_5"
+        android:layout_marginEnd="@dimen/value_8" />
+
+</LinearLayout>

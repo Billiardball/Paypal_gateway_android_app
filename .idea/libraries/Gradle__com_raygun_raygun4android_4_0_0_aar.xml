@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.raygun:raygun4android:4.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/raygun4android-4.0.0.aar/ff88025a3335b47b22d3eb255af5143c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/raygun4android-4.0.0.aar/ff88025a3335b47b22d3eb255af5143c/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.raygun/raygun4android/4.0.0/6c434f641821b3daa44d22f31d8a46846ee4ea81/raygun4android-4.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

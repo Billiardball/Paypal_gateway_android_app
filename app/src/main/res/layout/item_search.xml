@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llMain"
+    android:orientation="vertical">
+
+    <com.shop.arram.customview.textview.TextViewRegular
+        android:id="@+id/tvTitle"
+        style="@style/txt_gray_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:padding="@dimen/value_5"
+        android:layout_marginLeft="@dimen/value_10"
+        android:layout_marginRight="@dimen/value_10"
+        android:text=""
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:layout_marginStart="@dimen/value_10"
+        android:layout_marginEnd="@dimen/value_10" />
+
+    <com.shop.arram.customview.textview.TextViewLight
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_0.5"
+        android:background="@color/gray_table" />
+</LinearLayout>

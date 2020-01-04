@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context="com.shop.arram.activity.HomeActivity">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/svHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:id="@+id/llMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/llTopCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/bg"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/tvCategory"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_marginBottom="@dimen/value_5"
+                                android:layout_weight="0.5"
+                                android:background="@color/colorPrimary" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.5"
+                                android:background="@color/bg" />
+                        </LinearLayout>
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvTopCategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:nestedScrollingEnabled="false"
+                            android:scrollbars="vertical" />
+                    </FrameLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/value_2"
+                    android:background="@color/bg" />
+
+
+                <LinearLayout
+                    android:id="@+id/llMainContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/llBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v4.view.ViewPager
+                                android:id="@+id/vpBanner"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/value_100" />
+
+
+                            <LinearLayout
+                                android:id="@+id/layoutDots"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/value_30"
+                                android:layout_alignParentBottom="true"
+                                android:layout_gravity="bottom"
+                                android:layout_marginTop="@dimen/value_5"
+                                android:gravity="center"
+                                android:orientation="horizontal"></LinearLayout>
+
+
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llCategory"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_8"
+                        android:visibility="visible">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvCategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:nestedScrollingEnabled="false" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llVerticalBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_8"
+                        android:layout_marginBottom="@dimen/value_3"
+                        android:visibility="visible">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvVerticalBanner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:nestedScrollingEnabled="false" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llMenus"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSixReason"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_4"
+                        android:layout_marginBottom="@dimen/value_4"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:paddingTop="@dimen/value_8"
+                            android:paddingBottom="@dimen/value_8">
+
+                            <com.shop.arram.customview.textview.TextViewBold
+                                android:id="@+id/tvSixResonTitle"
+                                style="@style/txt_black_small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/value_5"
+                                android:layout_marginLeft="@dimen/value_5"
+                                android:gravity="start"
+                                android:textAlignment="viewStart"
+                                android:textDirection="locale" />
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/value_8"
+                                android:background="@color/white" />
+
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rvSixReason"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/value_4"
+                                android:layout_marginLeft="@dimen/value_4"
+                                android:layout_marginEnd="@dimen/value_4"
+                                android:layout_marginRight="@dimen/value_4"
+                                android:background="@drawable/white_gray_strok_button"
+                                android:elevation="@dimen/value_1"
+                                android:nestedScrollingEnabled="false"
+                                android:paddingStart="@dimen/value_0.5"
+                                android:paddingEnd="@dimen/value_0.5"
+                                android:paddingBottom="@dimen/value_8" />
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llRecentView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_4"
+                        android:layout_marginBottom="@dimen/value_4"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:paddingTop="@dimen/value_8"
+                            android:paddingBottom="@dimen/value_8">
+
+                            <com.shop.arram.customview.textview.TextViewBold
+                                style="@style/txt_black_small"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/value_5"
+                                android:layout_marginLeft="@dimen/value_5"
+                                android:layout_weight="0.9"
+                                android:gravity="start"
+                                android:text="@string/recently_view_product"
+                                android:textAlignment="viewStart"
+                                android:textDirection="locale" />
+
+
+                        </LinearLayout>
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/value_8"
+                                android:background="@color/white" />
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rvRecentOffer"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="@dimen/value_3"
+                                android:layout_marginLeft="@dimen/value_3"
+                                android:layout_marginEnd="@dimen/value_3"
+                                android:layout_marginRight="@dimen/value_3"
+                                android:background="@drawable/white_gray_strok_button"
+                                android:elevation="@dimen/value_1"
+                                android:nestedScrollingEnabled="false" />
+                        </FrameLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <include layout="@layout/layout_whatsapp" />
+
+    <include layout="@layout/layout_bottom_bar" />
+
+    <!-- Main layout -->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/ablHome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        app:srcCompat="@drawable/ic_back_white" />
+
+
+                        <ImageView
+                            android:id="@+id/ivLogo"
+                            android:layout_width="@dimen/value_60"
+                            android:layout_height="@dimen/value_15"
+                            android:layout_gravity="left|center"
+                            android:layout_marginLeft="@dimen/value_2"
+                            android:layout_marginTop="@dimen/value_2"
+                            android:layout_marginBottom="@dimen/value_2"
+                            android:src="@drawable/logo" />
+
+                    <com.shop.arram.customview.textview.TextViewBold
+                        android:id="@+id/tvTitle"
+                        style="@style/txt_white_big"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/value_10"
+                        android:layout_marginRight="@dimen/value_10"
+                        android:gravity="center"
+                        android:text="CiyaSHop" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/ivNotification"
+                    android:layout_width="@dimen/value_15"
+                    android:layout_height="@dimen/value_15"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/value_10"
+                    android:layout_marginRight="@dimen/value_10"
+                    android:padding="@dimen/value_1"
+                    android:visibility="visible" />
+
+                <FrameLayout
+                    android:id="@+id/flCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/value_5"
+                    android:layout_marginRight="@dimen/value_5"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/ivCart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="@dimen/value_2"
+                        android:layout_marginRight="@dimen/value_2"
+                        android:visibility="visible"
+                        app:srcCompat="@drawable/ic_shopping_cart_white" />
+
+                    <com.shop.arram.customview.textview.TextViewRegular
+                        android:id="@+id/tvToolCart"
+                        style="@style/txt_white_micro"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|top"
+                        android:layout_marginTop="@dimen/value_3"
+                        android:background="@drawable/black_round_corner_button"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/value_3"
+                        android:paddingLeft="@dimen/value_3"
+                        android:paddingTop="@dimen/value_1.5"
+                        android:paddingEnd="@dimen/value_3"
+                        android:paddingRight="@dimen/value_3"
+                        android:paddingBottom="@dimen/value_1.5"
+                        android:text="1" />
+                </FrameLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/llSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/value_5"
+            android:paddingBottom="@dimen/value_5"
+            android:scrollbars="none">
+
+            <com.shop.arram.customview.edittext.EditTextRegular
+                android:id="@+id/etSearch"
+                style="@style/txt_gray_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/value_8"
+                android:layout_marginLeft="@dimen/value_8"
+                android:layout_marginEnd="@dimen/value_8"
+                android:layout_marginRight="@dimen/value_8"
+                android:background="@drawable/white_rount_corner_button"
+                android:focusable="false"
+                android:gravity="start|center"
+                android:hint="@string/search"
+                android:paddingStart="@dimen/value_5"
+                android:paddingLeft="@dimen/value_5"
+                android:paddingTop="@dimen/value_3"
+                android:paddingEnd="@dimen/value_5"
+                android:paddingRight="@dimen/value_5"
+                android:paddingBottom="@dimen/value_3"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                app:drawableEndCompat="@drawable/ic_search_gray" />
+        </LinearLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

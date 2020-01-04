@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llBottomBar"
+    android:layout_gravity="bottom"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_strok" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_1"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/value_3"
+            android:paddingBottom="@dimen/value_3">
+
+            <LinearLayout
+                android:id="@+id/llHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivBottomHome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_home" />
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvBottomHome"
+                    style="@style/txt_gray_light_micro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_1.5"
+                    android:text="@string/home" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/llSearchFromBottom"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivBottomSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_search_bottom_gray" />
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvBottomSearch"
+                    style="@style/txt_gray_light_micro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_1.5"
+                    android:text="@string/search_bottom" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llCart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/ivBottomCart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_cart_gray" />
+
+
+
+
+
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvBottomCart"
+                    style="@style/txt_gray_light_micro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_1.5"
+                    android:text="@string/my_cart_bottom" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:id="@+id/llMyAccount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivBottomAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_account_gray" />
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvBottomAccount"
+                    style="@style/txt_gray_light_micro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_1.5"
+                    android:text="@string/account" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llWishList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0.25"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/ivBottomWishList"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_gray_wishlist" />
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvBottomWishList"
+                    style="@style/txt_gray_light_micro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_1.5"
+                    android:text="@string/wish_list" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.shop.arram.customview.textview.TextViewRegular
+            android:id="@+id/tvBottomCartCount"
+            style="@style/txt_white_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:gravity="end|top"
+            android:background="@drawable/black_round_corner_button"
+            android:maxLines="1"
+            android:paddingStart="@dimen/value_3"
+            android:paddingLeft="@dimen/value_3"
+            android:paddingTop="@dimen/value_1.5"
+            android:paddingEnd="@dimen/value_3"
+            android:paddingRight="@dimen/value_3"
+            android:paddingBottom="@dimen/value_1.5"
+            android:layout_marginStart="@dimen/value_5"
+            android:text="1" />
+
+    </FrameLayout>
+
+
+</LinearLayout>

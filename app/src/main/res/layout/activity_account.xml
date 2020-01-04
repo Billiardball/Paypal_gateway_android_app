@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <include layout="@layout/toolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/svHome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:id="@+id/llMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/account_bg"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/profile_image"
+                                android:layout_width="@dimen/value_60"
+                                android:layout_height="@dimen/value_70"
+                                android:layout_gravity="center"
+                                android:padding="@dimen/value_5"
+                                app:srcCompat="@drawable/man" />
+
+                            <ImageView
+                                android:id="@+id/ivEdit"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom|end"
+                                android:layout_marginEnd="@dimen/value_2"
+                                android:layout_marginRight="@dimen/value_2"
+                                android:layout_marginBottom="@dimen/value_8"
+                                android:background="@drawable/black_round_corner_button"
+                                android:padding="@dimen/value_2.5"
+                                app:srcCompat="@drawable/ic_edit" />
+                        </FrameLayout>
+
+                        <com.shop.arram.customview.textview.TextViewBold
+                            android:id="@+id/tvCustomerName"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_5"
+                            android:layout_marginBottom="@dimen/value_1"
+                            android:gravity="center" />
+
+                        <com.shop.arram.customview.textview.TextViewLight
+                            android:id="@+id/tvCustomerPhone"
+                            style="@style/txt_black_micro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_3"
+                            android:layout_marginBottom="@dimen/value_1"
+                            android:gravity="center" />
+
+                        <com.shop.arram.customview.textview.TextViewLight
+                            android:id="@+id/tvCustomerEmail"
+                            style="@style/txt_black_micro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/value_1"
+                            android:gravity="center" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:orientation="vertical">
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingBottom="@dimen/value_2">
+
+                            <com.shop.arram.customview.textview.TextViewBold
+                                android:id="@+id/tvLogIn"
+                                style="@style/txt_black_medium"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/value_2"
+                                android:layout_weight="0.3"
+                                android:drawablePadding="@dimen/value_10"
+                                android:gravity="start"
+                                android:padding="@dimen/value_8"
+                                android:text="@string/login"
+                                android:textAlignment="viewStart"
+                                android:textDirection="locale"
+                                app:drawableStartCompat="@drawable/ic_login" />
+
+                            <com.shop.arram.customview.textview.TextViewLight
+                                android:id="@+id/tvCustomerEmailLogin"
+                                style="@style/txt_black_small"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.9"
+                                android:gravity="end"
+                                android:lines="1"
+                                android:padding="@dimen/value_8"
+                                android:singleLine="true"
+                                android:text="jon@yopmail.com"
+                                android:visibility="gone" />
+
+                        </LinearLayout>
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray" />
+
+                        <com.shop.arram.customview.textview.TextViewBold
+                            android:id="@+id/tvMyOrder"
+                            style="@style/txt_black_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_2"
+                            android:drawablePadding="@dimen/value_10"
+                            android:gravity="start"
+                            android:padding="@dimen/value_8"
+                            android:text="@string/my_orders"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            app:drawableStartCompat="@drawable/ic_order_account" />
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray" />
+
+                        <com.shop.arram.customview.textview.TextViewBold
+                            android:id="@+id/tvAddress"
+                            style="@style/txt_black_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/value_10"
+                            android:gravity="start"
+                            android:padding="@dimen/value_8"
+                            android:text="@string/my_address"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            app:drawableStartCompat="@drawable/ic_address_account" />
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray" />
+
+                        <com.shop.arram.customview.textview.TextViewBold
+                            android:id="@+id/tvCurrancy"
+                            style="@style/txt_black_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/value_10"
+                            android:gravity="start"
+                            android:padding="@dimen/value_8"
+                            android:text="@string/currency"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            app:drawableStartCompat="@drawable/ic_currency" />
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray" />
+
+                        <com.shop.arram.customview.textview.TextViewBold
+                            android:id="@+id/tvLanguage"
+                            style="@style/txt_black_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/value_10"
+                            android:gravity="start"
+                            android:padding="@dimen/value_8"
+                            android:text="@string/language"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            app:drawableStartCompat="@drawable/ic_translate" />
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray" />
+
+                        <LinearLayout
+                            android:id="@+id/llDownload"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.shop.arram.customview.textview.TextViewLight
+                                android:id="@+id/tvDownload"
+                                style="@style/txt_black_small"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start"
+                                android:padding="@dimen/value_8"
+                                android:text="@string/download"
+                                android:textAlignment="viewStart"
+                                android:textDirection="locale" />
+
+                            <com.shop.arram.customview.textview.TextViewRegular
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/line_gray" />-->
+
+                        </LinearLayout>
+
+
+                        <com.shop.arram.customview.textview.TextViewLight
+                            android:id="@+id/tvMyRewars"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="@dimen/value_8"
+                            android:text="@string/my_reward"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale" />
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray" />
+
+                        <com.shop.arram.customview.textview.TextViewLight
+                            android:id="@+id/tvMyPoint"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="@dimen/value_8"
+                            android:text="@string/my_points"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale" />
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:id="@+id/RewardPointLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray" />
+
+                        <com.shop.arram.customview.textview.TextViewLight
+                            android:id="@+id/tvAboutUs"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="@dimen/value_8"
+                            android:text="@string/about_us"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale" />
+
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray" />
+
+                        <com.shop.arram.customview.textview.TextViewLight
+                            android:id="@+id/tvAccountSetting"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="@dimen/value_8"
+                            android:text="@string/account_setting"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale" />
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray" />
+
+                        <com.shop.arram.customview.Switch
+                            android:id="@+id/swNotification"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:gravity="left|start"
+                            android:padding="@dimen/value_8"
+                            android:text="@string/notification"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale" />
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray" />
+
+                        <com.shop.arram.customview.textview.TextViewLight
+                            android:id="@+id/tvContactUs"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="@dimen/value_8"
+                            android:text="@string/contact_us"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale" />
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray" />
+
+
+                        <com.shop.arram.customview.textview.TextViewLight
+                            android:id="@+id/tvRateUs"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="@dimen/value_8"
+                            android:text="@string/rate_app"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale" />
+
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray" />
+
+
+                        <com.shop.arram.customview.textview.TextViewLight
+                            android:id="@+id/tvClearHistory"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:padding="@dimen/value_8"
+                            android:text="@string/clear_history"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale" />
+
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="@color/line_gray" />
+
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvInfoPages"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </android.support.v7.widget.RecyclerView>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_whatsapp" />
+
+    <include layout="@layout/layout_bottom_bar" />
+</android.support.design.widget.CoordinatorLayout>

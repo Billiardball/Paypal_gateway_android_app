@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/value_5"
+    android:layout_marginEnd="@dimen/value_5"
+    android:layout_marginLeft="@dimen/value_5"
+    android:layout_marginRight="@dimen/value_5"
+    android:layout_marginStart="@dimen/value_5">
+
+    <ImageView
+        android:id="@+id/ivBanner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

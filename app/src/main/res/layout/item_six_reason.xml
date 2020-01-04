@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llMain"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layout_marginTop="@dimen/value_8"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value_3"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/value_3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/flImage"
+                    android:layout_width="@dimen/value_15"
+                    android:layout_height="@dimen/value_15">
+
+                    <ImageView
+                        android:id="@+id/ivDotImage"
+                        android:layout_width="@dimen/value_15"
+                        android:layout_height="@dimen/value_15"
+                        app:srcCompat="@drawable/primary_round_button"/>
+
+                    <ImageView
+                        android:id="@+id/ivImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:padding="@dimen/value_3" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/value_5"
+                android:layout_weight="0.98"
+                android:orientation="vertical"
+                android:gravity="start"
+                android:textAlignment="viewStart"
+                android:textDirection="locale"
+                android:layout_marginStart="@dimen/value_5">
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvName"
+                    style="@style/txt_black_small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/value_1"
+                    android:layout_marginRight="@dimen/value_2"
+                    android:singleLine="true"
+                    android:text=""
+                    android:gravity="start"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale"
+                    android:layout_marginStart="@dimen/value_1"
+                    android:layout_marginEnd="@dimen/value_2" />
+
+                <com.shop.arram.customview.textview.TextViewLight
+                    android:id="@+id/tvDescription"
+                    style="@style/txt_gray_micro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/value_10"
+                    android:layout_marginTop="@dimen/value_5"
+                    android:maxLines="2"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale"
+                    android:text=""
+                    android:layout_marginEnd="@dimen/value_10" />
+
+            </LinearLayout>
+
+            <com.shop.arram.customview.textview.TextViewLight
+                android:id="@+id/tvRightMargin"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/value_2"
+                android:background="@color/gray_table"
+                android:layout_marginEnd="@dimen/value_2" />
+        </LinearLayout>
+
+
+        <com.shop.arram.customview.textview.TextViewLight
+            android:id="@+id/tvDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/value_8"
+            android:layout_marginRight="@dimen/value_10"
+            android:layout_marginTop="@dimen/value_8"
+            android:background="@color/gray_table"
+            android:layout_marginEnd="@dimen/value_10"
+            android:layout_marginStart="@dimen/value_8" />
+    </LinearLayout>
+
+
+</LinearLayout>

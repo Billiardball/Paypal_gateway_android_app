@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/value_4"
+    android:layout_marginRight="@dimen/value_4"
+    android:layout_marginEnd="@dimen/value_4"
+    android:layout_marginStart="@dimen/value_4">
+
+    <FrameLayout
+        android:layout_width="@dimen/value_20"
+        android:layout_height="@dimen/value_20">
+
+        <TextView
+            android:id="@+id/tvSelect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/primary_strok_button" />
+
+        <TextView
+            android:id="@+id/tvColor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/value_1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxLines="1"
+            style="@style/txt_black_small"
+            />
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

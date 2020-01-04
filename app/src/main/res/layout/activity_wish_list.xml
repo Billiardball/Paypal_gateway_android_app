@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/crMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.shop.arram.activity.WishListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <include layout="@layout/toolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+        <include
+            layout="@layout/layout_empty"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.9"
+                android:orientation="vertical">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/svWishList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvWishList"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </android.support.v7.widget.RecyclerView>
+
+
+                </android.support.v4.widget.NestedScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/value_10"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <com.pnikosis.materialishprogress.ProgressWheel
+                    android:id="@+id/progress_wheel"
+                    android:layout_width="@dimen/value_20"
+                    android:layout_height="@dimen/value_20"
+                    android:layout_gravity="center"
+                    wheel:matProg_barColor="@color/colorPrimary"
+                    wheel:matProg_barWidth="@dimen/value_2"
+                    wheel:matProg_progressIndeterminate="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_bar" />
+
+    <include layout="@layout/layout_whatsapp" />
+
+
+</android.support.design.widget.CoordinatorLayout>

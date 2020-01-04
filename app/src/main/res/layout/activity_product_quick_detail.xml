@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/crMain"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <include layout="@layout/toolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+        <!--<android.support.v4.widget.NestedScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/value_12">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivProduct"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    />
+
+                <com.shop.arram.customview.textview.TextViewBold
+                    style="@style/txt_color_primary_big"
+                    android:id="@+id/tvProductName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/value_12"
+                    android:layout_marginTop="@dimen/value_12"
+                    android:paddingLeft="@dimen/value_5"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale"
+                    android:layout_weight="0.8"
+                    android:text=""
+                    android:paddingStart="@dimen/value_5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.shop.arram.customview.textview.TextViewMedium
+                    style="@style/txt_black_small"
+                    android:id="@+id/tvSubTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_5"
+                    android:layout_marginBottom="@dimen/value_5"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale"
+                    android:text="Quick Overview"/>
+                <org.sufficientlysecure.htmltextview.HtmlTextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_5"
+                    android:gravity="start"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale"
+                    android:text=""
+                    android:visibility="gone"/>
+
+                <WebView
+                    android:id="@+id/wvDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent">
+
+                </WebView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--</android.support.v4.widget.NestedScrollView>-->
+
+    </LinearLayout>
+    <include layout="@layout/layout_whatsapp" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/crMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <include layout="@layout/toolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/value_5"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/value_3"
+                        android:theme="@style/TextLabel1">
+
+                        <com.shop.arram.customview.edittext.EditTextRegular
+                            android:id="@+id/etFirstName"
+                            style="@style/txt_gray_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="1"
+
+                            android:gravity="start"
+                            android:hint="@string/first_name"
+                            android:lines="1"
+                            android:paddingBottom="@dimen/value_10"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            android:theme="@style/Theme.App.Base" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/value_3"
+                        android:theme="@style/TextLabel1">
+
+                        <com.shop.arram.customview.edittext.EditTextRegular
+                            android:id="@+id/etLastName"
+                            style="@style/txt_gray_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="1"
+                            android:gravity="start"
+                            android:hint="@string/last_name"
+                            android:lines="1"
+                            android:paddingBottom="@dimen/value_10"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            android:theme="@style/Theme.App.Base" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/value_3"
+                        android:theme="@style/TextLabel1">
+
+                        <com.shop.arram.customview.edittext.EditTextRegular
+                            android:id="@+id/etDOB"
+                            style="@style/txt_gray_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="1"
+                            android:focusable="false"
+                            android:gravity="start"
+                            android:hint="@string/date_of_birth"
+                            android:lines="1"
+                            android:paddingBottom="@dimen/value_10"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            android:theme="@style/Theme.App.Base" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            style="@style/txt_gray_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/value_2"
+                            android:layout_marginStart="@dimen/value_2"
+                            android:layout_marginTop="@dimen/value_10"
+                            android:text="@string/gender" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/value_8"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <FrameLayout
+                                android:id="@+id/flFemale"
+                                android:layout_width="@dimen/value_40"
+                                android:layout_height="@dimen/value_40"
+                                android:background="@drawable/primary_round_button">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:paddingTop="@dimen/value_3"
+                                    android:src="@drawable/girl" />
+
+                                <ImageView
+                                    android:id="@+id/ivRightFemale"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start|bottom"
+                                    app:srcCompat="@drawable/ic_right_gray" />
+
+                            </FrameLayout>
+
+
+                            <FrameLayout
+                                android:id="@+id/flMale"
+                                android:layout_width="@dimen/value_40"
+                                android:layout_height="@dimen/value_40"
+                                android:layout_marginLeft="@dimen/value_25"
+                                android:layout_marginStart="@dimen/value_25"
+                                android:background="@drawable/gray_round_corner_button">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:paddingTop="@dimen/value_3"
+                                    android:src="@drawable/male" />
+
+                                <ImageView
+                                    android:id="@+id/ivRightMale"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="start|bottom"
+                                    android:visibility="gone"
+                                    app:srcCompat="@drawable/ic_right_gray" />
+
+                            </FrameLayout>
+
+                        </LinearLayout>
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:id="@+id/tvSave"
+                            style="@style/txt_white_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/value_2"
+                            android:background="@color/colorPrimary"
+                            android:paddingBottom="@dimen/value_2"
+                            android:paddingEnd="@dimen/value_20"
+                            android:paddingLeft="@dimen/value_20"
+                            android:paddingRight="@dimen/value_20"
+                            android:paddingStart="@dimen/value_20"
+                            android:paddingTop="@dimen/value_2"
+                            android:text="@string/save" />
+
+
+                    </LinearLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/value_3"
+                        android:theme="@style/TextLabel1">
+
+                        <com.shop.arram.customview.edittext.EditTextRegular
+                            android:id="@+id/etMobileNumber"
+                            style="@style/txt_gray_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_5"
+                            android:ems="1"
+                            android:gravity="start"
+                            android:hint="@string/mobile_number"
+                            android:inputType="number"
+                            android:paddingBottom="@dimen/value_10"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            android:theme="@style/Theme.App.Base" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            style="@style/txt_gray_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/value_2"
+                            android:text="@string/email_id" />
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:id="@+id/tvEmail"
+                            style="@style/txt_black_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/value_2"
+                            android:text="test@gmail.com" />
+
+                        <LinearLayout
+                            android:id="@+id/llPassword"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/value_10"
+                            android:paddingTop="@dimen/value_3">
+
+                            <com.shop.arram.customview.textview.TextViewBold
+                                android:id="@+id/tvChangePassword"
+                                style="@style/txt_black_medium"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/value_2"
+                                android:layout_marginStart="@dimen/value_2"
+                                android:layout_weight="0.8"
+                                android:gravity="start|center"
+                                android:text="@string/change_password"
+                                android:textAlignment="viewStart"
+                                android:textDirection="locale" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/value_5"
+                                android:layout_marginRight="@dimen/value_5"
+                                app:srcCompat="@drawable/ic_go" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/value_10"
+                            android:layout_marginTop="@dimen/value_10"
+                            android:orientation="horizontal"
+                            android:paddingTop="@dimen/value_3">
+
+                            <com.shop.arram.customview.textview.TextViewBold
+                                android:id="@+id/tvDeactivateAccount"
+                                style="@style/txt_black_medium"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/value_5"
+                                android:layout_marginLeft="@dimen/value_2"
+                                android:layout_marginRight="@dimen/value_5"
+                                android:layout_marginStart="@dimen/value_2"
+                                android:layout_weight="0.8"
+                                android:gravity="start|center"
+                                android:text="@string/deactive_account"
+                                android:textAlignment="viewStart"
+                                android:textDirection="locale" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_marginEnd="@dimen/value_5"
+                                android:layout_marginRight="@dimen/value_5"
+                                app:srcCompat="@drawable/ic_go" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <include layout="@layout/layout_whatsapp"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

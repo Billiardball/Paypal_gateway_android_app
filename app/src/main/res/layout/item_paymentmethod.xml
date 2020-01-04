@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/value_5"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbMethod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.864"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.shop.arram.customview.textview.TextViewRegular
+            android:id="@+id/tvMethodTitle"
+            style="@style/txt_black_medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/value_1"
+            android:gravity="start|center"
+            android:text="Hello"
+            android:textAlignment="viewStart"
+            android:textDirection="locale" />
+
+    </LinearLayout>
+
+    <com.shop.arram.customview.textview.TextViewRegular
+        android:id="@+id/tvTitle"
+        style="@style/txt_black_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/value_20"
+        android:background="@color/gray_table"
+        android:padding="@dimen/value_5"
+        android:text="@string/codpay" />
+
+</LinearLayout>

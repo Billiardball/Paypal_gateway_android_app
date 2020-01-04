@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llSlectedProduct"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/value_4"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="@dimen/value_8"
+            android:paddingBottom="@dimen/value_8">
+
+            <com.shop.arram.customview.textview.TextViewBold
+                android:id="@+id/tvProductName"
+                style="@style/txt_black_small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/value_5"
+                android:layout_marginLeft="@dimen/value_5"
+                android:layout_weight="0.9"
+                android:gravity="start"
+                android:textAlignment="viewStart"
+                android:textDirection="locale" />
+
+            <com.shop.arram.customview.textview.TextViewRegular
+                android:id="@+id/tvViewAll"
+                style="@style/txt_white_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/value_5"
+                android:layout_marginRight="@dimen/value_5"
+                android:background="@drawable/primary_round_corner_button"
+                android:gravity="start"
+                android:paddingStart="@dimen/value_8"
+                android:paddingLeft="@dimen/value_8"
+                android:paddingTop="@dimen/value_3"
+                android:paddingEnd="@dimen/value_8"
+                android:paddingRight="@dimen/value_8"
+                android:paddingBottom="@dimen/value_3"
+                android:text="@string/view_all"
+                android:textAlignment="viewStart"
+                android:textDirection="locale" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_8"
+                android:background="@color/white" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/value_5"
+                android:layout_marginLeft="@dimen/value_5"
+                android:layout_marginEnd="@dimen/value_5"
+                android:layout_marginRight="@dimen/value_5"
+                android:elevation="@dimen/value_1"
+                android:nestedScrollingEnabled="false" />
+        </FrameLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

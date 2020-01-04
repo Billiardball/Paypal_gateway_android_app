@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/value_5"
+    android:layout_marginLeft="@dimen/value_5"
+    android:layout_marginRight="@dimen/value_5"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginEnd="@dimen/value_5"
+    android:layout_marginStart="@dimen/value_5">
+
+    <com.shop.arram.customview.textview.TextViewRegular
+        android:id="@+id/tvTitle"
+        style="@style/txt_color_primary_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="start|center"
+        android:paddingBottom="@dimen/value_4"
+        android:paddingLeft="@dimen/value_8"
+        android:paddingRight="@dimen/value_8"
+        android:paddingTop="@dimen/value_4"
+        android:text="@string/color"
+        android:paddingStart="@dimen/value_8"
+        android:paddingEnd="@dimen/value_8" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvProductVariation"
+        android:layout_marginLeft="@dimen/value_8"
+        android:layout_marginRight="@dimen/value_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/value_8"
+        android:layout_marginEnd="@dimen/value_3" />
+
+
+</LinearLayout>

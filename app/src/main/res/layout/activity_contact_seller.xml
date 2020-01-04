@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/crMain"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    tools:context="com.shop.arram.activity.ContactSellerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <include layout="@layout/toolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value_5"
+            android:layout_marginRight="@dimen/value_5"
+            android:layout_marginTop="@dimen/value_5"
+            android:orientation="vertical"
+            android:layout_marginStart="@dimen/value_5"
+            android:layout_marginEnd="@dimen/value_5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_3"
+                    android:theme="@style/TextLabel1">
+
+                    <com.shop.arram.customview.edittext.EditTextRegular
+                        style="@style/txt_black_small"
+                        android:id="@+id/etName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="1"
+                        android:hint="@string/name"
+                        android:lines="1"
+                        android:gravity="start"
+                        android:textAlignment="viewStart"
+                        android:textDirection="locale"
+                        android:paddingBottom="@dimen/value_10"
+                        android:singleLine="true"
+                        android:theme="@style/Theme.App.Base" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_3"
+                    android:theme="@style/TextLabel1">
+
+                    <com.shop.arram.customview.edittext.EditTextRegular
+                        style="@style/txt_black_small"
+                        android:id="@+id/etEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="1"
+                        android:hint="@string/email"
+                        android:lines="1"
+                        android:paddingBottom="@dimen/value_10"
+                        android:gravity="start"
+                        android:textAlignment="viewStart"
+                        android:textDirection="locale"
+                        android:singleLine="true"
+                        android:theme="@style/Theme.App.Base" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_3"
+                    android:theme="@style/TextLabel1">
+
+                    <com.shop.arram.customview.edittext.EditTextRegular
+                        style="@style/txt_black_small"
+                        android:id="@+id/etMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="1"
+                        android:hint="@string/message"
+                        android:gravity="start|top"
+                        android:textAlignment="viewStart"
+                        android:textDirection="locale"
+                        android:lines="5"
+                        android:maxLines="10"
+                        android:paddingBottom="@dimen/value_10"
+                        android:theme="@style/Theme.App.Base" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.shop.arram.customview.textview.TextViewBold
+                    style="@style/txt_white_medium"
+                    android:id="@+id/tvSend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_10"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:padding="@dimen/value_5"
+                    android:text="@string/send"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/layout_whatsapp" />
+
+</android.support.design.widget.CoordinatorLayout>

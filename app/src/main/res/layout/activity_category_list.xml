@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/crMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <include layout="@layout/toolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+        <LinearLayout
+            android:id="@+id/llCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/black"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/ivListOrGrid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:paddingEnd="@dimen/value_10"
+                        android:paddingLeft="@dimen/value_10"
+                        android:paddingRight="@dimen/value_10"
+                        android:paddingStart="@dimen/value_10"
+                        app:srcCompat="@drawable/ic_grid" />
+
+                    <TextView
+                        android:layout_width="@dimen/value_0.5"
+                        android:layout_height="match_parent"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:gravity="center">
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:id="@+id/tvSort"
+                            style="@style/txt_white_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:drawablePadding="@dimen/value_8"
+                            android:gravity="center"
+                            android:padding="@dimen/value_5"
+                            android:text="@string/sort_by"
+                            app:drawableStartCompat="@drawable/ic_sort_white" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="@dimen/value_0.5"
+                        android:layout_height="match_parent"
+                        android:background="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/llFilter"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.5"
+                        android:gravity="center">
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            style="@style/txt_white_small"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:drawablePadding="@dimen/value_8"
+                            android:gravity="center"
+                            android:padding="@dimen/value_5"
+                            android:text="@string/filter"
+                            app:drawableStartCompat="@drawable/ic_filter_white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.9"
+                        android:orientation="vertical">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvCategoryList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/value_1"
+                            android:layout_marginLeft="@dimen/value_1"
+                            android:layout_marginRight="@dimen/value_1"
+                            android:layout_marginStart="@dimen/value_1"
+                            android:layout_marginTop="@dimen/value_1"
+                            android:overScrollMode="never"
+                            android:visibility="gone"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rvCategoryGrid"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="@dimen/value_1"
+                            android:layout_marginLeft="@dimen/value_1"
+                            android:layout_marginRight="@dimen/value_1"
+                            android:layout_marginStart="@dimen/value_1"
+                            android:layout_marginTop="@dimen/value_1"
+                            android:overScrollMode="never"
+                            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llProgress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:layout_margin="@dimen/value_10"
+                        android:gravity="bottom|center"
+                        android:visibility="gone">
+
+                        <com.pnikosis.materialishprogress.ProgressWheel
+                            android:id="@+id/progress_wheel"
+                            android:layout_width="@dimen/value_15"
+                            android:layout_height="@dimen/value_15"
+                            android:layout_gravity="center"
+                            wheel:matProg_barColor="@color/colorPrimary"
+                            wheel:matProg_barWidth="@dimen/value_2"
+                            wheel:matProg_progressIndeterminate="true" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <include
+            layout="@layout/layout_empty"
+            android:visibility="gone" />
+
+
+
+    </LinearLayout>
+    <include layout="@layout/layout_whatsapp"/>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_transparent"
+        android:clipToPadding="true"
+        app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:orientation="horizontal"
+                android:padding="@dimen/value_5">
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvCancel"
+                    style="@style/txt_white_small"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/value_5"
+                    android:layout_marginStart="@dimen/value_5"
+                    android:layout_weight="0.35"
+                    android:text="@string/cancel" />
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    style="@style/txt_white_small"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.35"
+                    android:gravity="center"
+                    android:text="@string/sort_by" />
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvDone"
+                    style="@style/txt_white_small"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/value_5"
+                    android:layout_marginRight="@dimen/value_5"
+                    android:layout_weight="0.35"
+                    android:gravity="end"
+                    android:text="@string/done" />
+
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvSort"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/value_2"
+                android:layout_marginTop="@dimen/value_2">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

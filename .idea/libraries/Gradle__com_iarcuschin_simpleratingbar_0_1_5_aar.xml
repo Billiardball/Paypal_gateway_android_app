@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.iarcuschin:simpleratingbar:0.1.5@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/simpleratingbar-0.1.5.aar/60890fb7b5355da35ebeffa1e560a51a/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/simpleratingbar-0.1.5.aar/60890fb7b5355da35ebeffa1e560a51a/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.iarcuschin/simpleratingbar/0.1.5/b0a6ea5ed50012f3131d402bcd4dc41e4bab8b0d/simpleratingbar-0.1.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

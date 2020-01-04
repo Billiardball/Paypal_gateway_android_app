@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.klarna.mobile:sdk:2.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sdk-2.0.2.aar/0e492c4c142a8329d2dbb55114063248/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/sdk-2.0.2.aar/0e492c4c142a8329d2dbb55114063248/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

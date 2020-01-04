@@ -1,0 +1,271 @@
+<resources>
+    <string name="app_name">Ciyashop Cloths</string>
+    <string name="footer">\ © Ciyashop 2018 | Todos os direitos reservados</string>
+    <string name="search">Pesquisar produtos</string>
+
+
+    <string name="most_popular_poroducts">Produtos mais populares</string>
+    <string name="related_product">Produto relacionado</string>
+    <string name="special_offer">Oferta Especial de Hoje</string>
+    <string name="view_all">Ver tudo</string>
+
+    <string name="view">Visão</string>
+    <string name="only">Somente</string>
+    <string name="quntity_is_avilable">Quantidade está disponível</string>
+    <string name="recently_view_product">Produtos vistos recentemente</string>
+    <string name="top_rated_product">Produtos com melhor classificação</string>
+    <string name="my_orders">minhas ordens</string>
+    <string name="my_address">Meus endereços</string>
+    <string name="currency">escolha a moeda</string>
+    <string name="language">Escolha o seu idioma</string>
+    <string name="address">Endereço</string>
+    <string name="my_reward">Meus cupons</string>
+    <string name="please_apply_rating">Por favor, aplique classificação</string>
+    <string name="comment">Comente</string>
+    <string name="review">Reveja</string>
+    <string name="submit">Enviar</string>
+    <string name="rate_app">Avalie o aplicativo</string>
+    <string name="account_setting">Configurações de conta</string>
+    <string name="clear_history">Apagar o histórico</string>
+    <string name="whatsapp_not_installed">whatsapp não instalado</string>
+    <string name="about_us">Sobre nós</string>
+    <string name="contact_us">Contate-Nos</string>
+    <string name="request_password_reset">SOLICITA O REINICUTO DA SENHA</string>
+    <string name="set_new_password">SET NEW PASSWORD</string>
+    <string name="forget_pass_desc">É muitas vezes esquecido as coisas da senha. Digite seu endereço de e-mail abaixo e clique no botão \'Request Password Reset  botton. Entraremos em contato com você de forma geral!</string>
+    <string name="forget_pass_pin_desc">Digite o PIN que lhe enviamos no seu endereço de e-mail registrado.</string>
+    <string name="enter_pin">Entrar no pino</string>
+    <string name="now_you_can_enter_new_password">Agora você pode inserir nova Senha</string>
+    <string name="saved_Address">2 ENDEREÇOS SALVADOS</string>
+    <string name="billing_address">endereço de cobrança</string>
+    <string name="please_add_address">Adicione Endereço</string>
+    <string name="add_billing_address">ADICIONAR ENDEREÇO ​​DE FISCALIZAÇÃO</string>
+    <string name="add_shipping_address">ADICIONAR ENDEREÇO ​​DE TRANSPORTE</string>
+    <string name="add">ADICIONAR</string>
+    <string name="shipping_address">endereço de entrega</string>
+    <string name="first_name">Primeiro nome</string>
+    <string name="last_name">Último nome</string>
+    <string name="pincode">Pincode</string>
+    <string name="address1">Endereço 1</string>
+    <string name="address2">Endereço 2</string>
+    <string name="remove">REMOVER</string>
+    <string name="edit">EDITAR</string>
+    <string name="city">Cidade</string>
+    <string name="company">Empresa</string>
+    <string name="phone_number">Número de telefone</string>
+    <string name="save">Salve </string>
+    <string name="cancel">Cancelar</string>
+    <string name="sure">Certo</string>
+    <string name="date_of_birth">Data de nascimento</string>
+    <string name="gender">Gênero</string>
+    <string name="mobile_number">Número de celular</string>
+    <string name="email_id">Identificação do email</string>
+    <string name="change_password">Mudar senha</string>
+    <string name="deactive_account">Conta desativa</string>
+    <string name="account_deactivated">Conta Desativada</string>
+    <string name="thank_you">OBRIGADO</string>
+    <string name="your_order_is_placed_successfully">Seu pedido foi colocado com sucesso</string>
+    <string name="you_will_notify_in_few_momments">Você notificará em poucos minutos</string>
+    <string name="coupon_code">Coupon \ nCode</string>
+    <string name="old_password">Senha Antiga</string>
+    <string name="new_password">Nova senha</string>
+    <string name="enter_new_password">Insira a nova senha</string>
+    <string name="confirm_new_password">Confirme a nova senha</string>
+    <string name="retype_password">Redigite a senha</string>
+    <string name="confirm_deactivation">CONFIRMAR A DESACTIVAÇÃO</string>
+    <string name="account">Conta</string>
+    <string name="add_new_addresses">Adicionar novo endereço</string>
+    <string name="reset_your_world">Redefinir o seu mundo</string>
+    <string name="terms_condition">Termos e Condições</string>
+    <string name="privacy_policy">Política de Privacidade</string>
+    <string name="follow_us">Siga-nos</string>
+    <string name="more_about_us">Mais sobre nós</string>
+    <string name="name">Nome</string>
+    <string name="contact_number">Número de contato</string>
+    <string name="subject">Sujeito</string>
+    <string name="message">mensagem</string>
+    <string name="send">ENVIAR</string>
+    <string name="rate_and_review_products">Classifique e reveja o produto com base na sua experiência</string>
+    <string name="order">Ordem</string>
+    <string name="product">produtos</string>
+    <string name="total">Total</string>
+    <string name="order_detail">Detalhes da encomenda</string>
+    <string name="sub_total">Subtotal</string>
+    <string name="shipping">Remessa</string>
+    <string name="payment_method">Método de pagamento</string>
+    <string name="customer_detail">Detalhe do cliente</string>
+    <string name="phone">telefone</string>
+    <string name="cancel_order">CANCELAR PEDIDO</string>
+    <string name="claer">Claro</string>
+    <string name="this_permentantly_clear_you_history">Isso exclui permanentemente o seu historial de pesquisa, busca deste dispositivo.</string>
+    <string name="home">Casa</string>
+    <string name="address_updated_successfully">Endereço atualizado com sucesso</string>
+    <string name="information_updated_successfully">Informações atualizadas com sucesso</string>
+    <string name="my_wish_list">Lista de Desejos</string>
+    <string name="notification">Notificação</string>
+    <string name="price_detail">Detalhe do preço</string>
+    <string name="price">Preço</string>
+    <string name="amount_payable">Valor Payble</string>
+    <string name="view_price_detail">Ver detalhes de preços</string>
+    <string name="continue_">CONTINUAR</string>
+    <string name="sort_by">Ordenar por</string>
+    <string name="filter">Filtro</string>
+    <string name="color">Cor</string>
+    <string name="done">Feito</string>
+    <string name="quick_overview">Visão geral rápida:</string>
+    <string name="more">Mais</string>
+    <string name="detail">Detalhe</string>
+    <string name="product_highlight">Destaques do produto</string>
+    <string name="delete_all">Apagar tudo</string>
+    <string name="sign_out">Sair</string>
+    <string name="do_you_really_want_to_signout">Você realmente deseja sair da sua Conta?</string>
+    <string name="sign_up_desc">Registe-se agora e obtenha até 15% de desconto em todos os nossos produtos. A oferta é válida por muito pouco tempo.</string>
+    <string name="sign_in_now"><u>Faça seu login agora mesmo</u></string>
+    <string name="already_account">já tem uma conta?</string>
+    <string name="new_user_register_now"><u>Novo usuário? Registrar agora</u></string>
+    <string name="rate_write_review">Avalie e escreva uma revisão</string>
+    <string name="add_to_Cart">ADICIONAR AO CARRINHO</string>
+    <string name="buy_now">COMPRE</string>
+    <string name="sold_by">Vendido por</string>
+    <string name="contact_seller">Contatar vendedor</string>
+    <string name="other_products_from_this_vendor">Outros produtos deste fornecedor</string>
+    <string name="review_for_this_vendor">Revisão para este Fornecedor</string>
+    <string name="all_category">Todas as categorias</string>
+    <string name="Seller_Information">Informações do vendedor</string>
+    <string name="continue_shopping">CONTINUE COMPRANDO</string>
+    <string name="login_with_facebook">FACEBOOK</string>
+    <string name="login_with_google">GOOGLE +</string>
+    <string name="sign_in">ASSINAR EM</string>
+    <string name="sign_up">INSCREVER-SE</string>
+    <string name="user_name">UserName</string>
+    <string name="password">Senha</string>
+    <string name="forgot_password">Esqueceu a senha?</string>
+    <string name="email">O email</string>
+    <string name="confirm_password">Confirme a Senha</string>
+    <string name="login">Entrar</string>
+    <string name="view_store">Ver loja</string>
+    <string name="view_detail">Ver detalhes</string>
+    <string name="hint_ok">Está bem</string>
+    <string name="hint_cancel">Cancelar</string>
+    <string name="enter_email_address">Insira o endereço de e-mail</string>
+    <string name="enter_password">Digite a senha</string>
+    <string name="enter_confirm_password">Digite Confirmar Senha</string>
+    <string name="password_and_confirm_password_not_matched">Senha e Confirmar Senha não corresponde</string>
+    <string name="enter_valid_email_address">Digite o endereço de e-mail válido</string>
+    <string name="enter_username">Insira nome de usuário</string>
+    <string name="enter_proper_detail">Por favor, insira detalhes adequados</string>
+    <string name="something_went_wrong">Algo foi errado</string>
+    <string name="enter_name">Insira o nome</string>
+    <string name="enter_subject">Digite o assunto</string>
+    <string name="enter_message">Insira a mensagem</string>
+    <string name="enter_contact_number">Digite o número de contato</string>
+    <string name="message_sent_successfully">Mensagem enviada com sucesso</string>
+    <string name="something_went_wrong_try_after_somtime">Algo foi errado \ n Experimente depois de algum tempo</string>
+    <string name="coupon_code_is_copied_to_clipboard">O código do cupom é copiado para a área de transferência</string>
+    <string name="delivered_soon">Entregue em breve</string>
+    <string name="order_is_in_pending_state">A ordem está em estado pendente</string>
+    <string name="order_is_under_processing">O pedido está em processamento</string>
+    <string name="order_is_on_hold">O pedido está em espera</string>
+    <string name="delivered">O pedido foi concluído</string>
+    <string name="order_is_cancelled">A ordem é cancelada</string>
+    <string name="you_are_refunded_for_this_order">Você é reembolsado por este pedido</string>
+    <string name="order_is_failed">O pedido é falhado</string>
+    <string name="go_to_cart">IR AO CARRINHO</string>
+    <string name="coupon_codes">Código do cupom</string>
+    <string name="scratch_here_to_get_scratch_coupon">Raspe aqui para receber cupom de raspadinha</string>
+    <string name="my_points">My points</string>
+    <string name="event">Evento</string>
+    <string name="date">Data</string>
+    <string name="points">Pontos</string>
+    <string name="you_have_points">Você tem pontos</string>
+    <string name="my_point">Meus pontos</string>
+    <string name="no_points_earned">Nenhum ponto ganho</string>
+    <string name="purchase_product_and_erned_pointa">Compre produtos e ganhe pontos</string>
+    <string name="availability">Disponibilidade:</string>
+    <string name="no_data_found">Nenhum dado encontrado</string>
+    <string name="my_cart">Meu carrinho</string>
+    <string name="my_wishlist">Minha Lista de Desejos</string>
+    <string name="my_account">Minha conta</string>
+    <string name="shop_now">Compre agora</string>
+    <string name="newest_first">Os mais novos primeiro</string>
+    <string name="rating">Avaliação</string>
+    <string name="popularity">Popularidade</string>
+    <string name="low_to_high">preço - baixo para alto</string>
+    <string name="high_to_low">preço - alto a baixo</string>
+    <string name="cart">Carrinho</string>
+    <string name="cart_empty">Carrinho esta vazio.</string>
+    <string name="items">Unid</string>
+    <string name="no_product_available">Nenhum produto disponível</string>
+    <string name="browse_our_store_and_take_a_look_at_other_items_to_buy">Navegue pela nossa loja e confira outros itens para comprar.</string>
+    <string name="no_coupon_found">Nenhum cupom encontrado</string>
+    <string name="in_stock">Em estoque</string>
+    <string name="out_of_stock">Fora de estoque</string>
+
+
+    <string name="exit_from_app">Você sai do aplicativo</string>
+    <string name="permission_need">A permissão deve ser necessária</string>
+    <string name="add_photo">Adicionar foto</string>
+    <string name="take_photo">Tirar fotos</string>
+    <string name="choose_from_library">Escolha da Biblioteca</string>
+    <string name="log_out_success">Logout com sucesso</string>
+
+    <string name="scratch_here_to_get_coupon_code">arranhar aqui para obter código de cupom.</string>
+    <string name="no_product_found">Nenhum produto encontrado</string>
+    <string name="no_notification_yet">Nenhuma notificação ainda</string>
+    <string name="quick_overviews">Visão rápida</string>
+    <string name="rate_product">Avaliar produto</string>
+    <string name="your_review_is_waiting_for_approval">Sua opinião está aguardando aprovação</string>
+    <string name="item_added_to_your_cart">Item adicionado ao seu carrinho com sucesso</string>
+    <string name="variation_not_available">Esta variação não está disponível</string>
+    <string name="combition_doesnt_exist">Esta Combinação não existe. Escolha outra variante</string>
+    <string name="or_sign_up_with">Ou Inscreva-se com</string>
+    <string name="no_order_found">Nenhuma ordem encontrada</string>
+    <string name="on">Em</string>
+    <string name="order_id">ID do pedido: #</string>
+    <string name="was_place_on">foi colocado em</string>
+
+    <string name="and_currently">e atualmente</string>
+
+    <string name="version">Versão</string>
+
+    <string name="download">Baixar</string>
+
+    <string name="expiration">Expiração</string>
+
+    <string name="remaining">Remanescente</string>
+
+    <string name="download_complete">Download completo</string>
+
+    <string name="expire">Expirar :</string>
+
+    <string name="search_list_empty">A lista de pesquisa está vazia</string>
+
+    <string name="exitformapp">Pressione novamente para sair do aplicativo</string>
+
+    <string name="drawer_open">Aberto</string>
+
+    <string name="drawer_close">Fechar</string>
+
+    <string name="check_all_review">Verifique toda a crítica</string>
+
+    <string name="internet_not_working">Por favor, verifique sua conexão com a internet e tente novamente mais tarde</string>
+
+    <string name="featureProducts">produtos em destaque</string>
+
+    <string name="combition">Esta combinação não existe. Escolha outra variante</string>
+
+    <string name="clear_filter">Очистить фильтр</string>
+
+
+    <string name="search_bottom">Procurar</string>
+    <string name="wish_list">Lista de Desejos</string>
+    <string name="my_cart_bottom">Meu carrinho</string>
+    <string name="last_status">Último status</string>
+    <string name="from">A partir de</string>
+    <string name="to">Para</string>
+    <string name="track_order">Acompanhar Pedido</string>
+    <string name="track_not_found">Rastreamento Não encontrado</string>
+    <string name="track">Track</string>
+    <string name="payment">Forma de pagamento</string>
+
+</resources>

@@ -1,0 +1,42 @@
+<resources>
+    <dimen name="value_1">2.25dp</dimen>
+    <dimen name="value_1.5">2.67dp</dimen>
+    <dimen name="value_2">4.5dp</dimen>
+    <dimen name="value_2.5">5.75dp</dimen>
+    <dimen name="value_3">6.755dp</dimen>
+    <dimen name="value_4">9dp</dimen>
+    <dimen name="value_8">18dp</dimen>
+    <dimen name="value_5">11.25dp</dimen>
+    <dimen name="value_6">13.5dp</dimen>
+    <dimen name="value_70">157.5dp</dimen>
+    <dimen name="value_25">56.5dp</dimen>
+    <dimen name="value_10">22.5dp</dimen>
+    <dimen name="value_12">27dp</dimen>
+    <dimen name="value_15">33.75dp</dimen>
+    <dimen name="value_20">45dp</dimen>
+    <dimen name="value_30">57.5dp</dimen>
+    <dimen name="value_40">90dp</dimen>
+    <dimen name="value_50">112.5dp</dimen>
+    <dimen name="value_100">225dp</dimen>
+    <dimen name="value_60">135dp</dimen>
+    <integer name="height">87</integer>
+    <integer name="five">45</integer>
+    <dimen name="thumb_width">45dp</dimen>
+    <dimen name="thumb_height">45dp</dimen>
+    <dimen name="value_170">382.5dp</dimen>
+    <dimen name="value_0.5">1.135dp</dimen>
+    <dimen name="value_150">225dp</dimen>
+
+    <dimen name="bubble_thumb_width">70dp</dimen>
+    <dimen name="bubble_thumb_height">70dp</dimen>
+
+    <!-- font dimen !-->
+    <dimen name="font_16">36sp</dimen>
+    <dimen name="font_12">27sp</dimen>
+    <dimen name="font_10">22sp</dimen>
+    <dimen name="font_5">15sp</dimen>
+    <dimen name="font_6">13.5sp</dimen>
+    <dimen name="font_18">39.5sp</dimen>
+    <dimen name="font_7">16.5sp</dimen>
+    <dimen name="font_8">18sp</dimen>
+</resources>

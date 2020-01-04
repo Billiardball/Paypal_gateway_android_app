@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_gray_strok_button"
+    android:elevation="@dimen/value_2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.99"
+            android:orientation="vertical">
+
+            <com.shop.arram.customview.textview.TextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_gray" />
+
+            <LinearLayout
+                android:id="@+id/llMain"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_100">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:clipChildren="false"
+                        android:clipToPadding="false"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+
+                        <com.shop.arram.customview.like.animation.SparkButton
+                            android:id="@+id/ivWishList"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end"
+                            app:sparkbutton_activeImage="@drawable/ic_primary_heart"
+                            app:sparkbutton_iconSize="22dp"
+                            app:sparkbutton_inActiveImage="@drawable/ic_gray_heart"
+                            app:sparkbutton_primaryColor="@color/colorPrimary"
+                            app:sparkbutton_secondaryColor="@color/colorPrimaryTransperent" />
+
+                    </LinearLayout>
+
+                    <!--<com.potenza.ciyashop.customview.like.animation.SparkButton-->
+
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_3"
+                android:gravity="center">
+
+                <com.shop.arram.customview.MaterialRatingBar
+                    android:id="@+id/ratingBar"
+                    style="@style/Widget.MaterialRatingBar.RatingBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="true"
+                    android:rating="0"
+                    android:stepSize="0.5"
+                    app:mrb_fillBackgroundStars="true"
+                    app:mrb_progressBackgroundTint="@color/star_color"
+                    app:mrb_progressTint="@color/yello" />
+            </LinearLayout>
+
+            <com.shop.arram.customview.textview.TextViewLight
+                android:id="@+id/tvName"
+                style="@style/txt_gray_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/value_3"
+                android:layout_marginBottom="@dimen/value_2"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvPrice"
+                    style="@style/txt_color_primary_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_5"
+                    android:layout_marginBottom="@dimen/value_3"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:text="" />
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvPrice1"
+                    style="@style/txt_color_primary_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/value_2"
+                    android:layout_marginLeft="@dimen/value_2"
+                    android:layout_marginTop="@dimen/value_5"
+                    android:layout_marginBottom="@dimen/value_3"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:lines="1"
+                    android:text="" />
+
+
+            </LinearLayout>
+            </LinearLayout>
+
+            <com.shop.arram.customview.textview.TextViewLight
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/line_gray" />
+
+        </LinearLayout>
+
+        <com.shop.arram.customview.textview.TextViewLight
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/line_gray" />
+    </LinearLayout>
+
+
+</LinearLayout>

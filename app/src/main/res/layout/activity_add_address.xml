@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <include layout="@layout/toolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.shop.arram.customview.textview.TextViewMedium
+                    android:id="@+id/tvActivityTitle"
+                    style="@style/txt_black_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/value_8"
+                    android:gravity="start"
+                    android:text="@string/add_billing_address"
+                    android:textAlignment="viewStart"
+                    android:textDirection="locale" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="@dimen/value_5"
+                    android:layout_marginLeft="@dimen/value_5"
+                    android:layout_marginRight="@dimen/value_5"
+                    android:layout_marginStart="@dimen/value_5"
+                    android:orientation="vertical">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/value_3"
+                        android:theme="@style/TextLabel1">
+
+                        <com.shop.arram.customview.edittext.EditTextRegular
+                            android:id="@+id/etFirstName"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="1"
+                            android:gravity="start"
+                            android:hint="@string/first_name"
+                            android:lines="1"
+                            android:paddingBottom="@dimen/value_10"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            android:theme="@style/Theme.App.Base" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/value_3"
+                        android:theme="@style/TextLabel1">
+
+                        <com.shop.arram.customview.edittext.EditTextRegular
+                            android:id="@+id/etLastName"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="1"
+                            android:gravity="start"
+                            android:hint="@string/last_name"
+                            android:lines="1"
+                            android:paddingBottom="@dimen/value_10"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            android:theme="@style/Theme.App.Base" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/value_3"
+                        android:theme="@style/TextLabel1">
+
+                        <com.shop.arram.customview.edittext.EditTextRegular
+                            android:id="@+id/etPincode"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="1"
+                            android:gravity="start"
+                            android:hint="@string/pincode"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:paddingBottom="@dimen/value_10"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            android:theme="@style/Theme.App.Base" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/value_3"
+                        android:theme="@style/TextLabel1">
+
+                        <com.shop.arram.customview.edittext.EditTextRegular
+                            android:id="@+id/etAddress1"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="1"
+                            android:gravity="start"
+                            android:hint="@string/address1"
+                            android:lines="1"
+                            android:paddingBottom="@dimen/value_10"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            android:theme="@style/Theme.App.Base" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/value_3"
+                        android:theme="@style/TextLabel1">
+
+                        <com.shop.arram.customview.edittext.EditTextRegular
+                            android:id="@+id/etAddress2"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="1"
+                            android:gravity="start"
+                            android:hint="@string/address2"
+                            android:lines="1"
+                            android:paddingBottom="@dimen/value_10"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            android:theme="@style/Theme.App.Base" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/value_3"
+                        android:theme="@style/TextLabel1">
+
+                        <com.shop.arram.customview.edittext.EditTextRegular
+                            android:id="@+id/etCity"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="1"
+                            android:gravity="start"
+                            android:hint="@string/city"
+                            android:lines="1"
+                            android:paddingBottom="@dimen/value_10"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            android:theme="@style/Theme.App.Base" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/value_3"
+                        android:theme="@style/TextLabel1">
+
+                        <com.shop.arram.customview.edittext.EditTextRegular
+                            android:id="@+id/etCompany"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="1"
+                            android:gravity="start"
+                            android:hint="@string/company"
+                            android:lines="1"
+                            android:paddingBottom="@dimen/value_10"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            android:theme="@style/Theme.App.Base" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/tilPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/value_3"
+                        android:theme="@style/TextLabel1">
+
+                        <com.shop.arram.customview.edittext.EditTextRegular
+                            android:id="@+id/etPhoneNumber"
+                            style="@style/txt_black_small"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ems="1"
+                            android:gravity="start"
+                            android:hint="@string/phone_number"
+                            android:inputType="number"
+                            android:lines="1"
+                            android:paddingBottom="@dimen/value_10"
+                            android:singleLine="true"
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale"
+                            android:theme="@style/Theme.App.Base" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/value_5"
+                        android:layout_marginTop="@dimen/value_5"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="@dimen/value_5">
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:id="@+id/tvCancel"
+                            style="@style/txt_white_medium"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="@string/cancel" />
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:layout_width="@dimen/value_1"
+                            android:layout_height="match_parent"
+                            android:background="@color/white" />
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:id="@+id/tvSave"
+                            style="@style/txt_white_medium"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            android:gravity="center"
+                            android:text="@string/save" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </LinearLayout>
+    <include layout="@layout/layout_whatsapp"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

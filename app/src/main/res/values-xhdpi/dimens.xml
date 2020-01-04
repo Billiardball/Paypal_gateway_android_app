@@ -1,0 +1,38 @@
+<resources>
+    <dimen name="value_1">2dp</dimen>
+    <dimen name="value_1.5">3dp</dimen>
+    <dimen name="value_2.5">5dp</dimen>
+    <dimen name="value_2">4dp</dimen>
+    <dimen name="value_3">6dp</dimen>
+    <dimen name="value_4">8dp</dimen>
+    <dimen name="value_8">16dp</dimen>
+    <dimen name="value_5">10dp</dimen>
+    <dimen name="value_6">12dp</dimen>
+    <dimen name="value_70">140dp</dimen>
+    <dimen name="value_25">50dp</dimen>
+    <dimen name="value_10">20dp</dimen>
+    <dimen name="value_20">40dp</dimen>
+    <dimen name="value_30">60dp</dimen>
+    <dimen name="value_15">30dp</dimen>
+    <dimen name="value_12">24dp</dimen>
+    <dimen name="value_40">80dp</dimen>
+    <dimen name="value_100">200dp</dimen>
+    <dimen name="value_60">120dp</dimen>
+    <dimen name="value_150">300dp</dimen>
+    <dimen name="value_170">340dp</dimen>
+    <dimen name="value_0.5">1dp</dimen>
+    <dimen name="value_50">100dp</dimen>
+    <integer name="height">90</integer>
+    <integer name="five">40</integer>
+
+
+    <!-- font dimen !-->
+    <dimen name="font_6">12sp</dimen>
+    <dimen name="font_16">32sp</dimen>
+    <dimen name="font_12">24sp</dimen>
+    <dimen name="font_18">36sp</dimen>
+    <dimen name="font_10">20sp</dimen>
+    <dimen name="font_7">14sp</dimen>
+    <dimen name="font_8">16sp</dimen>
+    <dimen name="font_5">10sp</dimen>
+</resources>

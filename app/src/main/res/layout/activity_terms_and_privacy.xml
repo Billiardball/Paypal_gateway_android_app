@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crMain"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <include layout="@layout/toolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.shop.arram.customview.textview.TextViewLight
+                android:id="@+id/tvContentDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:layout_marginTop="@dimen/font_12"
+                android:layout_marginLeft="@dimen/font_12"
+                android:layout_marginRight="@dimen/font_12"
+                android:paddingBottom="@dimen/value_12"
+                android:layout_marginEnd="@dimen/font_12"
+                android:layout_marginStart="@dimen/font_12" />
+        </ScrollView>
+
+    </LinearLayout>
+    <include layout="@layout/layout_whatsapp" />
+</android.support.design.widget.CoordinatorLayout>

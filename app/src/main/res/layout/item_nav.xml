@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/value_5">
+
+        <FrameLayout
+            android:id="@+id/flImage"
+            android:layout_width="@dimen/value_15"
+            android:layout_height="@dimen/value_15"
+            android:background="@drawable/black_round_corner_button">
+
+
+            <ImageView
+                android:id="@+id/ivLeft"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="@dimen/value_3"
+                app:srcCompat="@drawable/ic_more_white" />
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value_2"
+            android:layout_marginStart="@dimen/value_2"
+            android:visibility="gone"
+            app:srcCompat="@drawable/ic_notification_black" />
+
+        <com.shop.arram.customview.textview.TextViewRegular
+            android:id="@+id/tvName"
+            style="@style/txt_black_small"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/value_8"
+            android:layout_marginStart="@dimen/value_8"
+            android:layout_weight="0.8"
+            android:gravity="start|center"
+            android:singleLine="false"
+            android:text="" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/ivRight"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_marginLeft="@dimen/value_15"-->
+        <!--android:layout_marginRight="@dimen/value_10"-->
+        <!--android:src="@drawable/ic_navigation"-->
+        <!--android:visibility="gone" />-->
+
+        <com.shop.arram.customview.textview.TextViewRegular
+            android:id="@+id/tvToolCart"
+            style="@style/txt_white_micro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top|end"
+            android:layout_marginEnd="@dimen/value_3"
+            android:layout_marginLeft="@dimen/value_3"
+            android:layout_marginRight="@dimen/value_3"
+            android:layout_marginStart="@dimen/value_3"
+            android:layout_marginTop="@dimen/value_3"
+            android:background="@drawable/black_round_corner_button"
+            android:maxLines="1"
+            android:paddingBottom="@dimen/value_1.5"
+            android:paddingEnd="@dimen/value_3"
+            android:paddingLeft="@dimen/value_3"
+            android:paddingRight="@dimen/value_3"
+            android:paddingStart="@dimen/value_3"
+            android:paddingTop="@dimen/value_1.5"
+            android:text="" />
+
+
+    </LinearLayout>
+
+    <com.shop.arram.customview.textview.TextViewRegular
+        android:id="@+id/tvDivider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_0.5"
+        android:layout_marginEnd="@dimen/value_8"
+        android:layout_marginLeft="@dimen/value_8"
+        android:layout_marginRight="@dimen/value_8"
+        android:layout_marginStart="@dimen/value_8"
+        android:background="@color/line_gray" />
+
+    <com.shop.arram.customview.textview.TextViewRegular
+        android:id="@+id/tvDividerGray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_0.5"
+        android:background="@color/gray"
+        android:visibility="gone" />
+
+
+</LinearLayout>

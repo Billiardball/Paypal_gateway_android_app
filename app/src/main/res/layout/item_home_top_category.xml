@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMain"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="start|center"
+    android:gravity="start"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.6"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <FrameLayout
+                android:id="@+id/flImage"
+                android:layout_width="@dimen/value_15"
+                android:layout_height="@dimen/value_15"
+                android:background="@drawable/black_round_corner_button">
+
+                <ImageView
+                    android:id="@+id/ivImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:padding="@dimen/value_3" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+
+        <com.shop.arram.customview.textview.TextViewRegular
+            android:id="@+id/tvName"
+            style="@style/txt_gray_micro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/value_1.5"
+            android:layout_marginRight="@dimen/value_1.5"
+            android:layout_marginTop="@dimen/value_1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text=""
+            android:layout_marginStart="@dimen/value_1.5"
+            android:layout_marginEnd="@dimen/value_1.5" />
+    </LinearLayout>
+
+</LinearLayout>

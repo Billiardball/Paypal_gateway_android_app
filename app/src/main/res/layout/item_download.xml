@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/value_3"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/value_5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/value_5"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+
+            <com.shop.arram.customview.textview.TextViewMedium
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxLines="2"
+                android:text=""
+                android:theme="@style/txt_black_micro" />
+
+
+            <com.shop.arram.customview.textview.TextViewRegular
+                android:id="@+id/tvFileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/value_5"
+                android:maxLines="2"
+                android:text=" "
+                android:theme="@style/txt_gray_micro" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivDownload"
+                android:layout_width="@dimen/value_20"
+                android:layout_height="@dimen/value_15"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/value_3"
+                android:background="@color/gray_dark"
+                android:padding="@dimen/value_3"
+                app:srcCompat="@drawable/ic_download" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/value_5"
+        android:layout_marginLeft="@dimen/value_5"
+        android:layout_marginRight="@dimen/value_5"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <com.shop.arram.customview.textview.TextViewLight
+                style="@style/txt_black_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expire" />
+
+
+            <com.shop.arram.customview.textview.TextViewRegular
+                android:id="@+id/tvExpiration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text=""
+                android:theme="@style/txt_gray_micro" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <com.shop.arram.customview.textview.TextViewLight
+                style="@style/txt_black_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remaining" />
+
+
+            <com.shop.arram.customview.textview.TextViewRegular
+                android:id="@+id/tvRemain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text=""
+                android:theme="@style/txt_gray_micro" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tvBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_0.5"
+        android:layout_marginLeft="@dimen/value_5"
+        android:layout_marginRight="@dimen/value_5"
+        android:layout_marginTop="@dimen/value_3"
+        android:background="@color/gray_dark" />
+</LinearLayout>

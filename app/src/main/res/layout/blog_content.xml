@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/value_6"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_4"
+                android:orientation="horizontal">
+
+                <com.shop.arram.customview.textview.TextViewLight
+                    style="@style/txt_black_big"
+                    android:id="@+id/tvBlogTitle"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.9"
+                    android:layout_height="wrap_content"
+                    android:text="A Powerful Face mask for your skin" />
+                <ImageView
+                    android:id="@+id/ivShare"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_gray_strok_button"
+                    android:paddingStart="@dimen/value_5"
+                    android:paddingTop="@dimen/value_4"
+                    android:paddingEnd="@dimen/value_5"
+                    android:paddingBottom="@dimen/value_4"
+                    app:srcCompat="@drawable/ic_share_gray" />
+            </LinearLayout>
+
+
+            <com.shop.arram.customview.textview.TextViewRegular
+                android:id="@+id/tvBlogDate"
+                style="@style/txt_color_primary_small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_5"
+                android:text="June 9,2018" />
+
+
+            <!--<com.potenza.ciyashop_cloths.customview.textview.TextViewLight-->
+            <!--android:id="@+id/tvBlogTitle"-->
+            <!--style="@style/txt_black_big"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!---->
+            <!--android:text="A Powerful Face mask for your skin" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_10"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginTop="@dimen/value_2"
+                    app:srcCompat="@drawable/ic_open_folder" />
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvCategory"
+                    style="@style/txt_gray_light_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/value_3"
+                    android:text="FEATURED,GENERAL,HEALTH,NEWS / 0 COMMENTS" />
+            </LinearLayout>
+
+            <com.shop.arram.customview.textview.TextViewLight
+                android:id="@+id/tvBlogContent"
+                style="@style/txt_gray_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/value_15"
+                android:layout_marginBottom="@dimen/value_10"
+                android:lineSpacingMultiplier="1.4"
+                android:text="The journey of BeWell has helped us see the world and this life in the way it should righteously be seen. It was a scintillating seven years and we are geared up for many more in this journey. With its evolution from being an one man Nutrition and Weight Management service to a holistic lifestyle […]" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

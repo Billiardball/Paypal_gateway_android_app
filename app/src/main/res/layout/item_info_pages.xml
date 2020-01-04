@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.shop.arram.customview.textview.TextViewLight
+        android:id="@+id/tvInfoPageTitle"
+        style="@style/txt_black_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/value_8"
+        android:textDirection="locale"
+        android:textAlignment="viewStart"
+        android:gravity="start"
+        android:text="" />
+
+    <com.shop.arram.customview.textview.TextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_gray" />
+
+</LinearLayout>

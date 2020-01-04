@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "159661447493",
+    "firebase_url": "https://ciyashop-78b96.firebaseio.com",
+    "project_id": "ciyashop-78b96",
+    "storage_bucket": "ciyashop-78b96.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:159661447493:android:afe903da7d1eef8a",
+        "android_client_info": {
+          "package_name": "com.shop.arram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "159661447493-8gbtce4smlnbn9bvs6vvcjo841ojjp5f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shop.arram",
+            "certificate_hash": "e878c1ee1cde3ea7513b2b2a119683141bcb7b99"
+          }
+        },
+        {
+          "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBbLQBlpmPFMeX3H5PmMQrTg3ImD4yahyA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "159661447493-161b60rspb603od9qenn9sevsrduru6l.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "159661447493-54bhsoigfocmb09okhfohqselt5gbppl.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.monto.CiyaShopBarberShop"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

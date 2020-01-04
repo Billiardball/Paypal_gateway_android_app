@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Green Cololr-->
+    <color name="colorPrimary">#04d39f</color>
+    <color name="colorPrimaryDark">#04d39f</color>
+    <color name="colorPrimaryTransperent">#aa04d39f</color>
+    <color name="colorPrimaryVeryLight">#4404d39f</color>
+    <color name="colorAccent">#04d39f</color>
+    <color name="material_grey">#9E9E9E</color>
+    <color name="colorGrey50">#fafafa</color>
+    <color name="spark_image_tint">#00000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="transparent_white">#00FFFFFF</color>
+    <color name="blue">#5f81c9</color>
+    <color name="darkgray">#353434</color>
+    <color name="orange">#de544f</color>
+    <color name="round_corner_progress_bar_background_default">#5f5f5f</color>
+    <color name="round_corner_progress_bar_progress_default">#7f7f7f</color>
+    <color name="round_corner_progress_bar_secondary_progress_default">@android:color/transparent
+    </color>
+
+
+    <color name="transparent_black">#dd000000</color>
+    <color name="scratch_start_gradient">#e5e5e5</color>
+    <color name="scratch_end_gradient">#cccccc</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="blackTransperent">#FF000000</color>
+    <color name="gray">#d0505050</color>
+    <color name="black_transparent">#66000000</color>
+    <color name="bg">#EFF2FB</color>
+    <color name="line_gray">#F2F1F3</color>
+    <color name="gray_table">#88d1d1d1</color>
+    <color name="gray_light">#b1b1b1</color>
+    <color name="star_color">#cccccc</color>
+    <color name="gray_dark">#8E8E8E</color>
+    <color name="yello">#ffcc00</color>
+    <color name="gray_very_dark">#737272</color>
+    <color name="gray_dark_main">#666666</color>
+    <color name="red">#FF0000</color>
+    <color name="black_strok">#494949</color>
+    <color name="gray_strok">#D3D3D3</color>
+    <color name="gray_draw">#8E8E8E</color>
+    <color name="green">#FF009900</color>
+    <color name="oranges">#FF9300</color>
+    <color name="reds">#FF2600</color>
+
+
+</resources>
+
+

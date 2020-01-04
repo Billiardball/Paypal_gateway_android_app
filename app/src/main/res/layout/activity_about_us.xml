@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:id="@+id/crMain"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <include layout="@layout/toolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/value_25"
+                        android:layout_marginTop="@dimen/value_10"
+                        android:id="@+id/Logo"
+                        android:src="@drawable/logo" />
+
+                    <com.shop.arram.customview.textview.TextViewLight
+                        style="@style/txt_black_medium"
+                        android:id="@+id/tvVersion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_5"
+                        android:gravity="center" />
+
+                    <com.shop.arram.customview.textview.TextViewLight
+                        style="@style/txt_black_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_5"
+                        android:gravity="center"
+                        android:text="@string/footer" />
+
+                    <com.shop.arram.customview.textview.TextViewLight
+                        android:id="@+id/tvTermsAndCondition"
+                        style="@style/txt_color_primary_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_8"
+                        android:gravity="center"
+                        android:text="@string/terms_condition" />
+
+                    <com.shop.arram.customview.textview.TextViewLight
+                        android:id="@+id/tvPrivacyPolicy"
+                        style="@style/txt_color_primary_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_10"
+                        android:gravity="center"
+                        android:text="@string/privacy_policy" />
+
+                    <com.shop.arram.customview.textview.TextViewBold
+                        style="@style/txt_black_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_8"
+                        android:gravity="center"
+                        android:text="@string/follow_us"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/value_5"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/ivPinterest"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_pinterest_logo_primary" />
+
+                        <ImageView
+                            android:id="@+id/ivTwitter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/value_5"
+                            app:srcCompat="@drawable/ic_twitter_logo_primary"
+                            android:layout_marginStart="@dimen/value_5" />
+
+                        <ImageView
+                            android:id="@+id/ivFacebook"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/value_5"
+                            app:srcCompat="@drawable/ic_facebook_logo_primary"
+                            android:layout_marginStart="@dimen/value_5" />
+
+
+                        <ImageView
+                            android:id="@+id/ivLinkedin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/value_5"
+                            app:srcCompat="@drawable/ic_linkedin_logo_primary"
+                            android:layout_marginStart="@dimen/value_5" />
+
+                        <ImageView
+                            android:id="@+id/ivGooglePlus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/value_5"
+                            app:srcCompat="@drawable/ic_google_plus_primary"
+                            android:layout_marginStart="@dimen/value_5" />
+
+                        <ImageView
+                            android:id="@+id/ivInstagram"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/value_5"
+                            app:srcCompat="@drawable/ic_instagram"
+                            android:layout_marginStart="@dimen/value_5" />
+
+                    </LinearLayout>
+
+                    <com.shop.arram.customview.textview.TextViewBold
+                        style="@style/txt_black_medium"
+                        android:id="@+id/tvMoreAboutUs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_8"
+                        android:gravity="center"
+                        android:text="@string/more_about_us"
+                        android:textStyle="bold" />
+
+                    <org.sufficientlysecure.htmltextview.HtmlTextView
+                        style="@style/txt_black_small"
+                        android:id="@+id/tvAboutusContent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/value_15"
+                        android:layout_marginLeft="@dimen/value_8"
+                        android:layout_marginRight="@dimen/value_8"
+                        android:layout_marginTop="@dimen/value_10"
+                        android:text=" "
+                        android:layout_marginEnd="@dimen/value_8"
+                        android:layout_marginStart="@dimen/value_8" />
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/layout_whatsapp"/>
+
+</android.support.design.widget.CoordinatorLayout>

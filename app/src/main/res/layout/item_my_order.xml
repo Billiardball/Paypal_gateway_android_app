@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.shop.arram.customview.textview.TextViewLight
+            style="@style/txt_gray_small"
+            android:id="@+id/tvOrderDateAndId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/value_8"
+            android:layout_marginRight="@dimen/value_8"
+            android:layout_marginTop="@dimen/value_5"
+            android:textDirection="locale"
+            android:textAlignment="viewStart"
+            android:text=""
+            android:layout_marginEnd="@dimen/value_8"
+            android:layout_marginStart="@dimen/value_8" />
+
+        <com.shop.arram.customview.textview.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_0.5"
+            android:layout_marginTop="@dimen/value_2"
+            android:background="@color/gray_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/value_15"
+            android:layout_marginLeft="@dimen/value_8"
+            android:layout_marginRight="@dimen/value_8"
+            android:orientation="horizontal"
+            android:layout_marginStart="@dimen/value_8"
+            android:layout_marginEnd="@dimen/value_8">
+
+            <ImageView
+                android:id="@+id/ivImage"
+                android:layout_width="@dimen/value_40"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/value_3"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/value_10"
+                android:layout_marginRight="@dimen/value_8"
+                android:layout_marginTop="@dimen/value_10"
+                android:orientation="vertical"
+                android:layout_marginStart="@dimen/value_10"
+                android:layout_marginEnd="@dimen/value_8">
+
+                <com.shop.arram.customview.textview.TextViewRegular
+                    android:id="@+id/tvTitle"
+                    style="@style/txt_black_small"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textDirection="locale"
+                    android:textAlignment="viewStart"
+                    android:text="" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/value_3"
+                    android:orientation="horizontal">
+
+                    <com.shop.arram.customview.textview.TextViewMedium
+                        style="@style/txt_color_primary_small"
+                        android:id="@+id/tvStatus"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.9"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="start"
+                        android:textDirection="locale"
+                        android:textAlignment="viewStart"
+                        android:text="" />
+
+                    <com.shop.arram.customview.textview.TextViewRegular
+                        android:id="@+id/tvView"
+                        style="@style/txt_white_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/view"
+                        android:background="@drawable/primary_round_corner_button"
+                        android:padding="@dimen/value_4"/>
+
+                </LinearLayout>
+
+                <com.shop.arram.customview.textview.TextViewLight
+                    style="@style/txt_gray_small"
+                    android:id="@+id/tvStatusDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/value_3"
+                    android:textDirection="locale"
+                    android:textAlignment="viewStart"
+                    android:layout_marginTop="@dimen/value_3"
+                    android:text="" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.shop.arram.customview.textview.TextViewRegular
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/value_0.5"
+            android:background="@color/gray_light" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.shop.arram.customview.textview.TextViewLight
+                style="@style/txt_gray_small"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/value_8"
+                android:layout_marginRight="@dimen/value_8"
+                android:layout_marginTop="@dimen/value_3"
+                android:gravity="center"
+                android:text="@string/rate_and_review_products"
+                android:layout_marginEnd="@dimen/value_8"
+                android:layout_marginStart="@dimen/value_8" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/value_8"
+                android:layout_marginRight="@dimen/value_8"
+                android:layout_marginTop="@dimen/value_3"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/value_8"
+                android:layout_marginEnd="@dimen/value_8">
+
+                <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srb_borderColor="@color/transparent"
+                    app:srb_numberOfStars="5"
+                    app:srb_stepSize="1"
+                    app:srb_starSize="@dimen/value_20"
+                    app:srb_starBackgroundColor="@color/star_color"
+                    app:srb_fillColor="@color/yello"
+                    />
+
+
+            </LinearLayout>
+
+            <com.shop.arram.customview.textview.TextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_0.5"
+                android:layout_marginTop="@dimen/value_1"
+                android:background="@color/gray_light" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

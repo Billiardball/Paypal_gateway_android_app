@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/value_8"
+        android:layout_marginLeft="@dimen/value_8"
+        android:layout_marginTop="@dimen/value_5"
+        android:layout_marginEnd="@dimen/value_8"
+        android:layout_marginRight="@dimen/value_8"
+        android:layout_marginBottom="@dimen/value_5"
+        android:orientation="horizontal">
+
+        <com.shop.arram.customview.textview.TextViewRegular
+            android:id="@+id/tvName"
+            style="@style/txt_gray_medium"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text=""
+            android:padding="@dimen/value_1"
+
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:id="@+id/llRating"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_weight="0.9">
+
+            <com.shop.arram.customview.MaterialRatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.MaterialRatingBar.FilterRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:rating="0"
+                android:stepSize="0.5"
+                app:mrb_fillBackgroundStars="true"
+                app:mrb_progressBackgroundTint="@color/star_color"
+                app:mrb_progressTint="@color/yello" />
+
+
+        </LinearLayout>
+
+
+        <CheckBox
+            android:id="@+id/ckSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:button="@drawable/custom_checkbox" />
+    </LinearLayout>
+
+
+    <com.shop.arram.customview.textview.TextViewRegular
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/value_0.5"
+        android:background="@color/gray_table" />
+
+
+</LinearLayout>

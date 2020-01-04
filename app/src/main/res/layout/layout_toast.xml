@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toast_layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/value_10"
+    android:layout_marginRight="@dimen/value_10"
+    android:layout_marginTop="@dimen/value_10"
+    android:background="#2196F3"
+    android:orientation="horizontal"
+    android:layout_marginStart="@dimen/value_10"
+    android:layout_marginEnd="@dimen/value_10">
+
+
+    <com.shop.arram.customview.textview.TextViewRegular
+        android:id="@+id/tvTitle"
+        style="@style/txt_white_small"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/value_5"
+        android:text="This Combition doesn't  exist. Choose another Variant "
+        android:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,239 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="Theme.DesignDemo" parent="AppTheme"></style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.AppCompat.Light.NoActionBar.FullScreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="DialogTheme">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_bottom</item>
+    </style>
+
+    <style name="txt_white_micro">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">@dimen/font_6</item>
+    </style>
+
+    <style name="txt_red_micro">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textColorHint">@color/red</item>
+        <item name="android:textSize">@dimen/font_6</item>
+    </style>
+
+    <style name="txt_color_primary_big">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/font_10</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/gray</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/gray</item>
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/gray</item>
+        <item name="android:textSize">@dimen/font_10</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    <style name="TextLabel1" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/gray</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/gray_light</item>
+        <item name="colorControlNormal">@color/gray_light</item>
+        <item name="colorControlActivated">@color/gray_light</item>
+        <item name="android:textSize">@dimen/font_10</item>
+    </style>
+
+
+    <style name="TextLabegray" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/gray</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/gray</item>
+        <item name="colorControlNormal">@color/gray</item>
+        <item name="colorControlActivated">@color/gray</item>
+        <item name="android:textSize">@dimen/font_10</item>
+    </style>
+
+    <style name="txt_color_primary_micro">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/font_6</item>
+    </style>
+
+    <style name="txt_color_primary_medium">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/font_8</item>
+    </style>
+
+    <style name="txt_color_primary_small">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/font_7</item>
+    </style>
+
+    <style name="txt_white_small">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">@dimen/font_7</item>
+    </style>
+
+    <style name="txt_white_medium">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">@dimen/font_8</item>
+    </style>
+
+    <style name="txt_white_big">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">@dimen/font_10</item>
+    </style>
+
+    <style name="txt_white_large">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">@dimen/font_12</item>
+    </style>
+
+    <style name="txt_gray_big">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textSize">@dimen/font_10</item>
+    </style>
+
+
+    <style name="txt_gray_small">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textSize">@dimen/font_7</item>
+    </style>
+
+    <style name="txt_gray_light_small">
+        <item name="android:textColor">@color/gray_draw</item>
+        <item name="android:textColorHint">@color/gray_draw</item>
+        <item name="android:textSize">@dimen/font_7</item>
+    </style>
+
+    <style name="txt_gray_light_micro">
+        <item name="android:textColor">@color/gray_draw</item>
+        <item name="android:textColorHint">@color/gray_draw</item>
+        <item name="android:textSize">@dimen/font_5</item>
+    </style>
+
+
+    <style name="txt_gray_micro">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textSize">@dimen/font_6</item>
+    </style>
+
+    <style name="txt_gray_medium">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textSize">@dimen/font_8</item>
+    </style>
+
+    <style name="txt_black_big">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_10</item>
+    </style>
+
+    <style name="txt_black_large">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_12</item>
+    </style>
+
+    <style name="txt_black_medium">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_8</item>
+        <!--<item name="android:textSize">@android:style/TextAppearance.Small</item>-->
+    </style>
+
+
+    <style name="txt_black_small">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_7</item>
+        <!--<item name="android:textSize">@android:style/TextAppearance.Small</item>-->
+    </style>
+
+    <style name="txt_black_micro">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/font_6</item>
+        <!--<item name="android:textSize">@android:style/TextAppearance.Small</item>-->
+    </style>
+
+    <style name="Theme.App.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/line_gray</item>
+        <item name="colorControlActivated">#e4e4e4</item>
+        <item name="colorControlHighlight">@color/line_gray</item>
+    </style>
+
+    <style name="txt_color_primary_very_big">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/font_18</item>
+    </style>
+
+    <style name="Widget.MaterialRatingBar.RatingBar" parent="android:Widget.RatingBar">
+        <!--
+        Disabled for correct behavior on Android 4.x, see
+        https://github.com/android/platform_frameworks_base/commit/911743652b597057a1bd7ef8a921e9ff8dce0f4a#diff-149f45c5ff2d3185bb79688ba17bc432L536
+        <item name="android:progressDrawable">@null</item>
+        -->
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">15dp</item>
+        <item name="android:maxHeight">15dp</item>
+    </style>
+
+    <style name="Widget.MaterialRatingBar.FilterRatingBar" parent="android:Widget.RatingBar">
+        <!--
+        Disabled for correct behavior on Android 4.x, see
+        https://github.com/android/platform_frameworks_base/commit/911743652b597057a1bd7ef8a921e9ff8dce0f4a#diff-149f45c5ff2d3185bb79688ba17bc432L536
+        <item name="android:progressDrawable">@null</item>
+        -->
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:minHeight">25dp</item>
+        <item name="android:maxHeight">25dp</item>
+    </style>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="Theme.DesignDemo.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.DesignDemo.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.DesignDemo.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

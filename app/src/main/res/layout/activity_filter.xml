@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/crMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:elevation="0dp">
+
+            <include layout="@layout/toolbar" />
+        </android.support.design.widget.AppBarLayout>
+
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:id="@+id/llPrice"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            style="@style/txt_black_big"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/value_2"
+                            android:layout_marginEnd="@dimen/value_8"
+                            android:layout_marginLeft="@dimen/value_8"
+                            android:layout_marginRight="@dimen/value_8"
+                            android:layout_marginStart="@dimen/value_8"
+                            android:layout_marginTop="@dimen/value_8"
+                            android:text="@string/price" />
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginEnd="@dimen/value_8"
+                            android:layout_marginLeft="@dimen/value_8"
+                            android:layout_marginRight="@dimen/value_8"
+                            android:layout_marginStart="@dimen/value_8"
+                            android:layout_marginTop="@dimen/value_3"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/value_5"
+                                android:layout_marginTop="@dimen/value_5"
+                                android:orientation="horizontal">
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    android:id="@+id/tvMin"
+                                    style="@style/txt_gray_small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/gray_strok"
+                                    android:paddingBottom="@dimen/value_3"
+                                    android:paddingEnd="@dimen/value_10"
+                                    android:paddingLeft="@dimen/value_10"
+                                    android:paddingRight="@dimen/value_10"
+                                    android:paddingStart="@dimen/value_10"
+                                    android:paddingTop="@dimen/value_3"
+                                    android:text="$40" />
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"></LinearLayout>
+
+                                <com.shop.arram.customview.textview.TextViewRegular
+                                    android:id="@+id/tvMax"
+                                    style="@style/txt_gray_small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@color/gray_strok"
+                                    android:paddingBottom="@dimen/value_3"
+                                    android:paddingEnd="@dimen/value_10"
+                                    android:paddingLeft="@dimen/value_10"
+                                    android:paddingRight="@dimen/value_10"
+                                    android:paddingStart="@dimen/value_10"
+                                    android:paddingTop="@dimen/value_3"
+                                    android:text="$45" />
+
+
+                            </LinearLayout>
+
+                            <com.shop.arram.customview.rangeseekbar.interfaces.widgets.CrystalRangeSeekbar
+                                android:id="@+id/priceseekbar"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/value_5"
+                                android:layout_marginEnd="@dimen/value_4"
+                                android:layout_marginLeft="@dimen/value_5"
+                                android:layout_marginRight="@dimen/value_4"
+                                android:layout_marginStart="@dimen/value_5"
+                                android:layout_marginTop="@dimen/value_8"
+                                app:max_value="500"
+                                app:min_value="100" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/llColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            style="@style/txt_black_big"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/value_5"
+                            android:layout_marginEnd="@dimen/value_3"
+                            android:layout_marginLeft="@dimen/value_3"
+                            android:layout_marginRight="@dimen/value_3"
+                            android:layout_marginStart="@dimen/value_3"
+                            android:layout_marginTop="@dimen/value_8"
+                            android:drawablePadding="@dimen/value_5"
+                            android:paddingEnd="@dimen/value_5"
+                            android:paddingLeft="@dimen/value_5"
+                            android:paddingRight="@dimen/value_5"
+                            android:paddingStart="@dimen/value_5"
+                            android:text="@string/color"
+                            app:drawableStartCompat="@drawable/ic_color_drop" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="start|left"
+                            android:gravity="start|left"
+                            android:padding="@dimen/value_4">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rvColor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/value_5"
+                                android:layout_marginLeft="@dimen/value_5"
+                                android:layout_marginRight="@dimen/value_5"
+                                android:layout_marginStart="@dimen/value_5"
+                                android:paddingBottom="@dimen/value_5" />
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvFilterType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginBottom="@dimen/value_10"
+                        android:layout_marginEnd="@dimen/value_5"
+                        android:layout_marginLeft="@dimen/value_5"
+                        android:layout_marginRight="@dimen/value_5"
+                        android:layout_marginStart="@dimen/value_5"
+                        android:layout_marginTop="@dimen/value_10">
+
+                    </android.support.v7.widget.RecyclerView>
+
+                    <com.shop.arram.customview.textview.TextViewRegular
+                        android:id="@+id/tvClearFilter"
+                        style="@style/txt_white_medium"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/value_10"
+                        android:background="@color/colorPrimary"
+                        android:gravity="center"
+                        android:padding="@dimen/value_5"
+                        android:text="@string/clear_filter" />
+
+                </LinearLayout>
+
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <include layout="@layout/layout_whatsapp" />
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    app:dragEdge="right"
+    app:mode="same_level">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="@dimen/value_3"
+                android:layout_weight="0.99"
+
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.3">
+
+                    <ImageView
+                        android:id="@+id/ivImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerInside" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|center"
+                    android:layout_marginStart="@dimen/value_5"
+                    android:layout_marginLeft="@dimen/value_5"
+                    android:layout_marginTop="@dimen/value_8"
+                    android:layout_marginBottom="@dimen/value_8"
+                    android:layout_weight="0.6"
+                    android:gravity="start|center"
+                    android:orientation="vertical">
+
+                    <com.shop.arram.customview.textview.TextViewRegular
+                        android:id="@+id/tvName"
+                        style="@style/txt_gray_small"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textAlignment="viewStart"
+                        android:textDirection="locale" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/value_1"
+                        android:layout_marginLeft="@dimen/value_1"
+                        android:layout_marginTop="@dimen/value_5"
+                        android:layout_marginEnd="@dimen/value_2"
+                        android:layout_marginRight="@dimen/value_2"
+                        android:gravity="start|center">
+
+                        <com.shop.arram.customview.MaterialRatingBar
+                            android:id="@+id/ratingBar"
+                            style="@style/Widget.MaterialRatingBar.RatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:isIndicator="true"
+                            android:rating="0"
+                            android:stepSize="0.5"
+                            app:mrb_fillBackgroundStars="true"
+                            app:mrb_progressBackgroundTint="@color/star_color"
+                            app:mrb_progressTint="@color/yello" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/value_5"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:id="@+id/tvPrice"
+                            style="@style/txt_color_primary_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="" />
+
+                        <com.shop.arram.customview.textview.TextViewRegular
+                            android:id="@+id/tvPrice1"
+                            style="@style/txt_color_primary_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/value_2"
+                            android:layout_marginLeft="@dimen/value_2"
+                            android:gravity="center"
+                            android:text="" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/value_2.5"
+                        android:gravity="start"
+                        android:orientation="horizontal">
+
+                        <com.shop.arram.customview.textview.TextViewLight
+                            android:id="@+id/txtVariation"
+                            style="@style/txt_gray_micro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start"
+                            android:text=""
+                            android:textAlignment="viewStart"
+                            android:textDirection="locale" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_controller"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/value_3"
+                    android:background="@drawable/cart_round_button"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/value_3">
+
+                    <ImageView
+                        android:id="@+id/tvIncrement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_plus_sign" />
+
+                    <com.shop.arram.customview.textview.TextViewBold
+                        android:id="@+id/tvQuantity"
+                        style="@style/txt_black_medium"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/value_1"
+                        android:layout_marginBottom="@dimen/value_1"
+                        android:text="1"
+                        android:textColor="@color/colorPrimary" />
+
+                    <ImageView
+                        android:id="@+id/tvDecrement"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/ic_minus_sign" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/ivDelete"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/value_2"
+                        app:srcCompat="@drawable/ic_remove" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.shop.arram.customview.textview.TextViewRegular
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/value_0.5"
+                android:background="@color/gray_table" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>
